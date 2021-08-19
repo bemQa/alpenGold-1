@@ -1,0 +1,376 @@
+@import "vars"
+
+.header
+	overflow: hidden
+	position: relative
+	&-mob
+		display: none
+		position: absolute
+		top: 0
+		left: 0
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+	&-top
+		background: #531D0D
+		overflow: hidden
+		.wrapper
+			position: relative
+			height: 210px
+	&-user
+		display: none
+		position: absolute
+		top: 32px
+		right: 122px
+		width: 27px
+		height: 31px
+		background-image: url("data:image/svg+xml,%3Csvg width='27' height='31' viewBox='0 0 27 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.75065 7.10135C5.75065 11.0233 9.22044 14.2027 13.5007 14.2027C17.7809 14.2027 21.2507 11.0233 21.2507 7.10135C21.2507 3.17938 17.7809 0 13.5007 0C9.22044 0 5.75065 3.17938 5.75065 7.10135ZM9.64292 30.8963C10.8612 30.8362 12.1569 30.7723 13.5007 30.7723C14.8444 30.7723 16.1401 30.8362 17.3584 30.8963C22.6077 31.1554 26.4173 31.3434 26.4173 26.038C26.4173 19.5014 20.6343 16.5696 13.5007 16.5696C6.36697 16.5696 0.583984 19.5014 0.583984 26.038C0.583984 31.3434 4.39357 31.1554 9.64292 30.8963Z' fill='white'/%3E%3C/svg%3E%0A")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+		cursor: pointer
+	&-logo,&-bg,&-text
+		position: absolute
+		img,svg
+			display: block
+	&-logo
+		top: 34px
+		left: 6px
+		z-index: 50
+		img,svg
+			max-width: 157px
+	&-text
+		top: 26px
+		right: 30px
+		z-index: 20
+		img,svg
+			max-width: 666px
+	&-bg
+		&-1
+			top: 0
+			right: 0
+			z-index: 2
+			img,svg
+				max-height: 210px
+		&-2
+			top: 0
+			left: 205px
+			z-index: 10
+			img,svg
+				max-height: 210px
+		&-3
+			top: 0
+			left: 0
+			z-index: 5
+			img,svg
+				min-width: 1440px
+	&-btn
+		display: inline-block
+		padding: 12px 34px 8px 46px
+		font-family: $OfficinaSansBlackC
+		font-size: 16px
+		line-height: 20px
+		font-weight: 900
+		color: #531D0D
+		text-transform: uppercase
+		background: linear-gradient(76.65deg, #FCE7A7 28.9%, #F6B748 58.74%, #F7B645 83.14%)
+		border-radius: 30px
+		position: absolute
+		bottom: 22px
+		right: 25px
+		z-index: 30
+		&::before,&::after
+			content: ''
+			position: absolute
+			top: 50%
+			transform: translate(0,-50%)
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+		&::before
+			left: 13px
+			width: 27px
+			height: 26px
+			background-image: url('../img/header/like-ico-min.png')
+		&::after
+			right: 15px
+			width: 10px
+			height: 11px
+			background-image: url("data:image/svg+xml,%3Csvg width='10' height='11' viewBox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.162109 0.790527L9.47619 5.83565L0.16211 10.8808L0.162109 0.790527Z' fill='%23531D0D'/%3E%3C/svg%3E%0A")
+	&-menu
+		li
+			padding: 0 2px 0 0
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				top: -1px
+				right: -12px
+				width: 24px
+				height: 2px
+				background: linear-gradient(180deg, #C9613B 2.6%, #230F0D 100%)
+				transform: rotate(-90deg) translate(-50%,0)
+			a
+				display: block
+				padding: 4px 22px
+				font-family: $OfficinaSansBoldC
+				font-size: 14px
+				line-height: 16px
+				font-weight: bold
+				color: #fff
+				&.active,&:hover
+					color: #FAF779
+			&:first-child
+				padding-left: 0
+				a
+					padding-left: 0
+			&:last-child
+				&::after
+					display: none
+	&-buttons
+		.second-btn
+			margin-left: 21px
+	&-bottom
+		background: linear-gradient(180deg, #C9613B 2.6%, #983B19 5.21%, #5E140C 28.13%, #471009 84.9%)
+		padding: 9px 0 10px
+		position: relative
+		z-index: 50
+		.wrapper
+			justify-content: space-between
+	&-bottom .wrapper, &-menu, &-buttons
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+	&-bar span,&-bar span:before,&-bar span:after
+		display: block
+		height: 6px
+		width: 42px
+		position: absolute
+		top: 50%
+		margin-top: -3px
+		left: 50%
+		margin-left: -21px
+		background: #fff
+		border-radius: 5px
+	&-bar
+		position: absolute
+		top: 48px
+		right: 30px
+		transform: translate(0,-50%)
+		width: 40px
+		height: 40px
+		z-index: 1000
+		cursor: pointer
+		display: none
+		span
+			&:after
+				content: ''
+				transition: $transition
+				margin-top: 9px
+			&:before
+				content: ''
+				transition: $transition
+				margin-top: -15px
+	&.header-active
+		.header
+			&-bar
+				span
+					background: transparent
+					&:after
+						transform: rotate(-135deg)
+						margin-top: 0
+					&:before
+						transform: rotate(135deg)
+						margin-top: 0
+
+@media only screen and (max-width : 1220px)
+	.header
+		&-text
+			img,svg
+				max-width: 450px
+		&-menu
+			li
+				a
+					padding: 4px 12px
+	
+@media only screen and (max-width : 1020px)
+	.header
+		&-text
+			img,svg
+				max-width: 350px
+		&-bg
+			&-2
+				left: 155px
+			&-3
+				left: -110px
+		&-bottom
+			padding: 15px 0
+			.wrapper
+				justify-content: center
+		&-menu
+			display: none
+		&-buttons
+			.primary-btn,.second-btn
+				min-width: 250px
+				font-size: 18px
+				margin: 0 13px
+			.primary-btn
+				padding: 11px 23px 9px
+			.second-btn
+				padding: 11px 10px 8px
+	
+@media only screen and (max-width : 890px)
+	.header
+		&-logo
+			left: 25px
+			img,svg
+				max-width: 111px
+		&-text
+			right: 25px
+			img,svg
+				max-width: 320px
+		&-bg
+			&-2
+				top: auto
+				bottom: 0
+				img,svg
+					max-width: 317px
+			&-3
+				left: -160px
+	
+@media only screen and (max-width : 768px)
+	.header
+		&-mob
+			&-1
+				display: block
+				width: 768px
+				height: 260px
+		&-bar,&-user
+			display: block
+			z-index: 100
+		&-top
+			.wrapper
+				min-height: 260px
+		&-logo
+			top: 24px
+			left: 50%
+			transform: translate(-50%,0)
+		&-text
+			top: auto
+			bottom: 33px
+			right: 30px
+			img,svg
+				max-width: 431px
+		&-btn
+			right: auto
+			bottom: auto
+			top: 24px
+			left: 30px
+			font-size: 18px
+			padding: 17px 50px 13px 62px
+			&::before
+				left: 16px
+				width: 32px
+				height: 32px
+			&::after
+				right: 19px
+				width: 12px
+				height: 12px
+		&-bg
+			&-1
+				img,svg
+					min-height: 260px
+			&-2
+				left: 9px
+				bottom: -11px
+				img,svg
+					max-width: 327px
+			&-3
+				display: none
+
+@media only screen and (max-width : 750px)
+	.header
+		&-top
+			.wrapper
+				min-height: 425px
+		&-mob
+			&-1
+				display: none
+			&-2
+				display: block
+				top: 90px
+				left: 0
+				width: 100%
+				padding-bottom: 125.92592592592594%
+				z-index: 10
+		&-logo
+			top: 27px
+			img,svg
+				max-width: 107px
+		&-user
+			top: 29px
+			left: 20px
+		&-bar span,&-bar span:before,&-bar span:after
+			width: 28px
+			height: 4px
+			margin-top: -2px
+			margin-left: -14px
+		&-bar
+			top: 44px
+			right: 22px
+			width: 28px
+			height: 20px
+			span
+				&:after
+					content: ''
+					transition: $transition
+					margin-top: 6px
+				&:before
+					content: ''
+					transition: $transition
+					margin-top: -10px
+		&-text
+			top: 130px
+			left: 50%
+			transform: translate(-50%,0)
+			max-width: 332px
+			width: 100%
+			img,svg
+				max-width: 332px
+		&-btn
+			min-width: 215px
+			top: 213px
+			left: 50%
+			transform: translate(-50%,0)
+			font-size: 16px
+			padding: 12px 34px 8px 46px
+			&::before
+				left: 13px
+				width: 26px
+				height: 26px
+			&::after
+				right: 15px
+				width: 10px
+				height: 10px
+		&-bg
+			&-2
+				top: auto
+				bottom: -7px
+				left: 50%
+				transform: translate(-50%,0)
+				img,svg
+					max-width: 292px
+		&-bottom
+			padding: 0
+			.wrapper
+				display: block
+		&-buttons
+			display: block
+			padding: 20px 0
+			max-width: 250px
+			margin: 0 auto
+			.primary-btn,.second-btn
+				display: block
+				margin: 0
+			.primary-btn
+				margin-bottom: 20px
