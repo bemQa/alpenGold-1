@@ -1,0 +1,164 @@
+@import "vars"
+
+.prizes
+	.page-content
+		padding: 34px 0 5px
+		.wrapper
+			max-width: 1005px
+	&-block
+		padding-bottom: 35px
+		&-2
+			padding: 7px 0 45px
+		&-last
+			.prizes
+				&-wrap
+					background: linear-gradient(76.65deg, #FCE7A7 28.9%, #F6B748 58.74%, #F7B645 83.14%)
+					text-align: center
+				&-img
+					top: 0
+					bottom: auto
+					padding: 0
+	&-title
+		display: block
+		text-align: center
+		font-family: $OfficinaSansBlackC
+		font-size: 28px
+		line-height: 35px
+		font-weight: 900
+		text-transform: uppercase
+		color: #fff
+		text-shadow: -1px 1px 1px #531D0D
+		margin: 0 0 28px
+	&-row
+		display: flex
+		flex-flow: row wrap
+		justify-content: center
+		margin: 0 -10px
+	&-col
+		width: 33.333%
+		padding: 0 10px 20px
+	&-wrap
+		display: block
+		padding-bottom: 110.81967213114754%
+		background: rgba(191, 87, 49, 0.3)
+		border: 1px solid #fff
+		border-radius: 20px
+		position: relative
+		&-second
+			background: linear-gradient(76.65deg, rgba(252, 231, 167, 0.5) 28.9%, rgba(246, 183, 72, 0.5) 58.74%, rgba(247, 182, 69, 0.5) 83.14%)
+			.prizes
+				&-title
+					top: 45px
+				&-img
+					top: 40px
+					bottom: auto
+	&-name
+		position: absolute
+		top: 35px
+		left: 50%
+		transform: translate(-50%,0)
+		display: block
+		width: 100%
+		padding: 0 20px
+		font-family: $OfficinaSansBlackC
+		font-size: 20px
+		line-height: 1.25
+		font-weight: 900
+		text-transform: uppercase
+		color: #fff
+		text-shadow: -1px 1px 1px #531D0D
+		text-align: center
+	&-img
+		display: block
+		width: 100%
+		padding: 0 22px
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translate(-50%,0)
+		img,svg
+			display: block
+	&-logo
+		position: absolute
+		top: -21px
+		left: 50%
+		transform: translate(-50%,0)
+		img,svg
+			display: block
+			max-height: 52px
+	&-link
+		position: absolute
+		bottom: 30px
+		left: 50%
+		transform: translate(-50%,0)
+		display: inline-block
+		font-family: $OfficinaSansBoldC
+		font-size: 18px
+		line-height: 21px
+		font-weight: bold
+		color: #fff
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	&-light
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		width: 209.835%
+		height: 189.349%
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		z-index: -1
+	&-price
+		position: absolute
+		top: 35px
+		left: 50%
+		transform: translate(-50%,0)
+		display: block
+		width: 100%
+		font-family: $OfficinaSansBlackC
+		font-size: 20px
+		line-height: 1.25
+		font-weight: 900
+		text-transform: uppercase
+		color: #531D0D
+		padding: 0 20px
+		margin: 0
+	&-text
+		position: absolute
+		bottom: 15px
+		left: 50%
+		transform: translate(-50%,0)
+		display: block
+		text-align: center
+		max-width: 250px
+		width: 100%
+		padding: 0 15px
+		font-size: 16px
+		line-height: 18px
+		color: #531D0D
+		b
+			display: block
+			font-family: $OfficinaSansBoldC
+			font-weight: bold
+
+@media only screen and (max-width : 768px)
+	.prizes
+		.page-content
+			padding: 34px 0 26px
+		&-block
+			padding-bottom: 14px
+		&-title
+			margin-bottom: 20px
+		&-col
+			width: 50%
+
+@media only screen and (max-width : 620px)
+	.prizes
+		&-col
+			width: 100%
+			max-width: 305px
+			margin: 0 auto
+			padding: 0 0 20px

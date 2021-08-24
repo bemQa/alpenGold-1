@@ -97,7 +97,7 @@
 			width: 10px
 			height: 11px
 			background-image: url("data:image/svg+xml,%3Csvg width='10' height='11' viewBox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.162109 0.790527L9.47619 5.83565L0.16211 10.8808L0.162109 0.790527Z' fill='%23531D0D'/%3E%3C/svg%3E%0A")
-	&-menu
+	&-list
 		li
 			padding: 0 2px 0 0
 			position: relative
@@ -137,10 +137,13 @@
 		z-index: 50
 		.wrapper
 			justify-content: space-between
-	&-bottom .wrapper, &-menu, &-buttons
+	&-bottom .wrapper, &-list, &-buttons
 		display: flex
 		flex-flow: row nowrap
 		align-items: center
+	&-menu
+		.header-buttons
+			display: none
 	&-bar span,&-bar span:before,&-bar span:after
 		display: block
 		height: 6px
@@ -159,7 +162,7 @@
 		transform: translate(0,-50%)
 		width: 40px
 		height: 40px
-		z-index: 1000
+		z-index: 1300
 		cursor: pointer
 		display: none
 		span
@@ -171,17 +174,6 @@
 				content: ''
 				transition: $transition
 				margin-top: -15px
-	&.header-active
-		.header
-			&-bar
-				span
-					background: transparent
-					&:after
-						transform: rotate(-135deg)
-						margin-top: 0
-					&:before
-						transform: rotate(135deg)
-						margin-top: 0
 
 @media only screen and (max-width : 1220px)
 	.header
@@ -195,7 +187,10 @@
 	
 @media only screen and (max-width : 1020px)
 	.header
+		&-bar
+			display: block
 		&-text
+			right: 90px
 			img,svg
 				max-width: 350px
 		&-bg
@@ -205,10 +200,77 @@
 				left: -110px
 		&-bottom
 			padding: 15px 0
+			z-index: 1000
 			.wrapper
 				justify-content: center
 		&-menu
-			display: none
+			position: fixed
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			max-height: 100%
+			background: #531D0D
+			padding-bottom: 40px
+			overflow-x: hidden
+			overflow-y: auto
+			transition: $transition
+			z-index: 1200
+			opacity: 0
+			visibility: hidden
+			&::before,&::after
+				content: ''
+				position: absolute
+				left: 0
+				width: 100%
+				background-repeat: no-repeat
+				background-position: center
+				background-size: cover
+			&::before
+				top: 0
+				padding-bottom: 81.06666666666666%
+				background-image: url(../img/header/header-light-1-min.png)
+			&::after
+				bottom: 0
+				padding-top: 81.06666666666666%
+				background-image: url(../img/header/header-light-2-min.png)
+			.header-buttons
+				display: block
+				max-width: 250px
+				margin: 0 auto
+				.primary-btn
+					margin: 0 0 20px
+				.second-btn
+					margin: 0
+		&-list
+			display: block
+			max-width: 250px
+			margin: 0 auto
+			text-align: center
+			padding: 16px 0 46px
+			li
+				display: block
+				padding: 12px 0 14px
+				position: relative
+				&::after
+					top: auto
+					bottom: 0
+					left: 50%
+					transform: translate(-50%,0)
+					word-wrap: 24px
+					height: 2px
+					background: linear-gradient(180deg, #C9613B 2.6%, #230F0D 100%)
+				&:first-child,&:last-child
+					padding: 12px 0 14px
+					a
+						padding: 10px
+				a
+					display: block
+					padding: 10px
+					font-size: 18px
+					line-height: 20px
+					font-weight: bold
+					color: #fff
 		&-buttons
 			.primary-btn,.second-btn
 				min-width: 250px
@@ -218,6 +280,20 @@
 				padding: 11px 23px 9px
 			.second-btn
 				padding: 11px 10px 8px
+		&.header-active
+			.header
+				&-menu
+					opacity: 1
+					visibility: visible
+				&-bar
+					span
+						background: transparent
+						&:after
+							transform: rotate(-135deg)
+							margin-top: 0
+						&:before
+							transform: rotate(135deg)
+							margin-top: 0
 	
 @media only screen and (max-width : 890px)
 	.header
@@ -226,7 +302,7 @@
 			img,svg
 				max-width: 111px
 		&-text
-			right: 25px
+			right: 90px
 			img,svg
 				max-width: 320px
 		&-bg
@@ -247,6 +323,7 @@
 				height: 260px
 		&-bar,&-user
 			display: block
+		&-user
 			z-index: 100
 		&-top
 			.wrapper
@@ -287,6 +364,19 @@
 					max-width: 327px
 			&-3
 				display: none
+		&.header-second
+			.header
+				&-mob
+					&-2
+						top: -40%
+				&-top
+					height: 140px
+				&-bottom,&-text,&-btn,&-bg-2
+					display: none
+		&.header-transparent
+			.header
+				&-mob
+					display: none
 
 @media only screen and (max-width : 750px)
 	.header

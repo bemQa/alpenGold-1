@@ -1,0 +1,175 @@
+@import "vars"
+
+.product
+	.page-content
+		padding: 64px 0 42px
+	&-block
+		background: linear-gradient(217.17deg, #FFFFFF -55.4%, #FFE686 54.82%, #F7B545 152.24%)
+		border-radius: 22px
+		box-shadow: -1px 1px 2px rgba(104, 39, 0, 0.75)
+		margin-bottom: 19px
+		&.active
+			.product
+				&-ico
+					background-image: url("data:image/svg+xml,%3Csvg width='54' height='54' viewBox='0 0 54 54' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Ccircle cx='28' cy='26' r='25' fill='%23682700'/%3E%3C/g%3E%3Cpath d='M41 27.3137C41 27.6187 40.9508 27.8148 40.8524 27.902C40.7539 27.9673 40.4751 28 40.0157 28H17.0335C16.5741 28 16.2789 27.9673 16.1476 27.902C16.0492 27.8148 16 27.6187 16 27.3137V23.6863C16 23.403 16.0492 23.2179 16.1476 23.1307C16.2789 23.0436 16.5741 23 17.0335 23H40.0157C40.4751 23 40.7539 23.0436 40.8524 23.1307C40.9508 23.2179 41 23.403 41 23.6863V27.3137Z' fill='white'/%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0' y='0' width='54' height='54' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='-1' dy='1'/%3E%3CfeGaussianBlur stdDeviation='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.407789 0 0 0 0 0.153002 0 0 0 0 0.000130266 0 0 0 0.75 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A")
+		&-1
+			.product
+				&-logo
+					img,svg
+						max-width: 72px
+		&-2
+			.product
+				&-logo
+					img,svg
+						max-width: 70px
+		&-3
+			.product
+				&-logo
+					img,svg
+						max-width: 88px
+		&-4
+			.product
+				&-logo
+					img,svg
+						max-width: 60px
+	&-top
+		min-height: 102px
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+		padding: 20px 210px 20px 13px
+		position: relative
+	&-logo
+		min-width: 125px
+		img,svg
+			display: block
+	&-title
+		display: block
+		font-family: $OfficinaSansBlackC
+		font-size: 21px
+		line-height: 26px
+		font-weight: 900
+		text-transform: uppercase
+		color: #682700
+		margin: 0
+	&-mark
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+		position: absolute
+		top: 50%
+		right: 9px
+		transform: translate(0,-50%)
+		cursor: pointer
+	&-ico
+		display: block
+		min-width: 54px
+		width: 54px
+		height: 54px
+		background-image: url("data:image/svg+xml,%3Csvg width='54' height='54' viewBox='0 0 54 54' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Ccircle cx='28' cy='26' r='25' fill='%23682700'/%3E%3C/g%3E%3Cpath d='M41 28.3137C41 28.6187 40.9508 28.8148 40.8524 28.902C40.7539 28.9673 40.4751 29 40.0157 29H17.0335C16.5741 29 16.2789 28.9673 16.1476 28.902C16.0492 28.8148 16 28.6187 16 28.3137V24.6863C16 24.403 16.0492 24.2179 16.1476 24.1307C16.2789 24.0436 16.5741 24 17.0335 24H40.0157C40.4751 24 40.7539 24.0436 40.8524 24.1307C40.9508 24.2179 41 24.403 41 24.6863V28.3137Z' fill='url(%23paint0_linear)'/%3E%3Cpath d='M26.6863 39C26.3813 39 26.1852 38.9508 26.098 38.8524C26.0327 38.7539 26 38.4751 26 38.0157L26 15.0335C26 14.5741 26.0327 14.2789 26.098 14.1476C26.1852 14.0492 26.3813 14 26.6863 14L30.3137 14C30.597 14 30.7821 14.0492 30.8693 14.1476C30.9564 14.2789 31 14.5741 31 15.0335L31 38.0157C31 38.4751 30.9564 38.7539 30.8693 38.8524C30.7821 38.9508 30.5969 39 30.3137 39L26.6863 39Z' fill='url(%23paint1_linear)'/%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0' y='0' width='54' height='54' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='-1' dy='1'/%3E%3CfeGaussianBlur stdDeviation='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.407789 0 0 0 0 0.153002 0 0 0 0 0.000130266 0 0 0 0.75 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear' x1='50.4435' y1='20.5619' x2='47.7372' y2='38.4058' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='white'/%3E%3Cstop offset='0.530853' stop-color='%23FFE686'/%3E%3Cstop offset='1' stop-color='%23F7B545'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='34.4381' y1='48.4435' x2='16.5942' y2='45.7372' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='white'/%3E%3Cstop offset='0.530853' stop-color='%23FFE686'/%3E%3Cstop offset='1' stop-color='%23F7B545'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+		margin-left: 23px
+	&-text
+		display: block
+		font-size: 18px
+		line-height: 20px
+		color: #682700
+		opacity: 0.8
+	&-item
+		display: none
+		padding-bottom: 11px
+	.swiper-wrapper
+		display: flex
+		flex-flow: row wrap
+		margin: 0
+		width: auto
+	&-slide
+		width: 25%
+		padding: 0 31px 54px
+	&-wrap
+		text-align: center
+	&-img
+		padding-bottom: 16px
+		img,svg
+			display: block
+			max-height: 160px
+			margin: 0 auto
+	&-name,&-gram
+		display: block
+		font-size: 16px
+		line-height: 18px
+		color: #682700
+		a
+			color: #682700
+	&-name
+		min-height: 36px
+		font-family: $OfficinaSansMediumC
+		font-weight: 500
+	&-gram
+		font-style: italic
+
+@media only screen and (max-width : 890px)
+	.product
+		&-slide
+			width: 33.333%
+			padding: 0 15px 40px
+
+@media only screen and (max-width : 768px)
+	.product
+		.page-content
+			padding: 60px 0 15px
+
+@media only screen and (max-width : 620px)
+	.product
+		&-block
+			position: relative
+			margin-bottom: 76px
+			&.active
+				.product
+					&-ico
+						background-image: url("data:image/svg+xml,%3Csvg width='54' height='54' viewBox='0 0 54 54' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Ccircle cx='28' cy='26' r='25' fill='white'/%3E%3C/g%3E%3Cpath d='M38.6215 18.9436C38.8372 19.1593 38.941 19.3328 38.933 19.464C38.9097 19.5798 38.7356 19.8001 38.4108 20.1249L22.1599 36.3758C21.8351 36.7006 21.6032 36.8863 21.4642 36.9329C21.3329 36.9408 21.1595 36.837 20.9438 36.6213L18.3788 34.0563C18.1786 33.856 18.0824 33.6903 18.0904 33.5591C18.1216 33.4047 18.2995 33.1651 18.6243 32.8403L34.8753 16.5893C35.2 16.2646 35.428 16.0982 35.5593 16.0902C35.6905 16.0822 35.8562 16.1784 36.0565 16.3786L38.6215 18.9436Z' fill='%23531D0D'/%3E%3Cpath d='M36.0561 36.6212C35.8404 36.8369 35.667 36.9408 35.5358 36.9328C35.42 36.9094 35.1997 36.7353 34.8749 36.4105L18.6239 20.1596C18.2992 19.8348 18.1135 19.6029 18.0669 19.4639C18.0589 19.3327 18.1628 19.1593 18.3784 18.9436L20.9434 16.3786C21.1437 16.1783 21.3095 16.0822 21.4407 16.0901C21.5951 16.1213 21.8347 16.2993 22.1595 16.6241L38.4104 32.875C38.7352 33.1998 38.9016 33.4278 38.9095 33.559C38.9175 33.6902 38.8214 33.856 38.6211 34.0562L36.0561 36.6212Z' fill='%23531D0D'/%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0' y='0' width='54' height='54' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='-1' dy='1'/%3E%3CfeGaussianBlur stdDeviation='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.407789 0 0 0 0 0.153002 0 0 0 0 0.000130266 0 0 0 0.75 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A")
+		&-top
+			display: flex
+			align-items: center
+			justify-content: center
+			position: static
+			padding: 30px 15px
+		&-logo
+			position: absolute
+			min-width: auto
+			top: 0
+			left: 50%
+			transform: translate(-50%,-50%)
+		&-title
+			text-align: center
+		&-text
+			display: none
+		&-mark
+			width: 54px
+			height: 54px
+			top: auto
+			right: auto
+			left: 50%
+			bottom: 0
+			transform: translate(-50%,50%)
+		&-ico
+			margin: 0
+			background-image: url("data:image/svg+xml,%3Csvg width='54' height='54' viewBox='0 0 54 54' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Ccircle cx='28' cy='26' r='25' fill='white'/%3E%3C/g%3E%3Cpath d='M41 28.3137C41 28.6187 40.9508 28.8148 40.8524 28.902C40.7539 28.9673 40.4751 29 40.0157 29H17.0335C16.5741 29 16.2789 28.9673 16.1476 28.902C16.0492 28.8148 16 28.6187 16 28.3137V24.6863C16 24.403 16.0492 24.2179 16.1476 24.1307C16.2789 24.0436 16.5741 24 17.0335 24H40.0157C40.4751 24 40.7539 24.0436 40.8524 24.1307C40.9508 24.2179 41 24.403 41 24.6863V28.3137Z' fill='%23531D0D'/%3E%3Cpath d='M26.6863 39C26.3813 39 26.1852 38.9508 26.098 38.8524C26.0327 38.7539 26 38.4751 26 38.0157L26 15.0335C26 14.5741 26.0327 14.2789 26.098 14.1476C26.1852 14.0492 26.3813 14 26.6863 14L30.3137 14C30.597 14 30.7821 14.0492 30.8693 14.1476C30.9564 14.2789 31 14.5741 31 15.0335L31 38.0157C31 38.4751 30.9564 38.7539 30.8693 38.8524C30.7821 38.9508 30.5969 39 30.3137 39L26.6863 39Z' fill='%23531D0D'/%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0' y='0' width='54' height='54' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='-1' dy='1'/%3E%3CfeGaussianBlur stdDeviation='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.407789 0 0 0 0 0.153002 0 0 0 0 0.000130266 0 0 0 0.75 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A")
+		&-slider
+			padding: 0 20px
+			.swiper-button-prev,.swiper-button-next
+				top: 107px
+				transform: none
+		.swiper-wrapper
+			flex-flow: row nowrap
+		&-slide
+			width: 100%
+		&-img
+			padding-bottom: 25px
+			img,svg
+				max-height: 242px
+		&-name
+			min-height: auto
+			margin-bottom: 2px

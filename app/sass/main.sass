@@ -10,6 +10,7 @@
 
 @include font('OfficinaSansBlackC', normal, 900, '../fonts/OfficinaSansBlack.woff2')
 @include font('OfficinaSansBoldC', normal, 700, '../fonts/OfficinaSansBold.woff2')
+@include font('OfficinaSansMediumC', normal, 400, '../fonts/OfficinaSansMedium.woff2')
 @include font('OfficinaSansBookC', normal, 400, '../fonts/OfficinaSansBook.woff2')
 
 *::-webkit-input-placeholder
@@ -63,10 +64,6 @@ input,textarea,select,button
 	appearance: none
 	box-shadow: none
 
-select
-	background: url(../img/select-icon.svg) no-repeat 97% center
-	background-size: 10px
-
 button
 	cursor: pointer
 	transition: $transition
@@ -82,6 +79,41 @@ button
 	width: 100%
 	height: 100%
 
+.mCSB_scrollTools
+	opacity: 1
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+	width: 6px
+	background-color: #fff
+	opacity: 1
+	box-shadow: none
+
+.mCSB_scrollTools .mCSB_draggerRail
+	background-color: #fff
+	opacity: 1
+	box-shadow: none
+
+.swiper-button-prev,.swiper-button-next
+	top: 50%
+	transform: translate(0,-50%)
+	margin: 0
+	background-repeat: no-repeat
+	background-position: center
+	background-size: contain
+	width: 23px
+	height: 36px
+	cursor: pointer
+	&::after
+		display: none
+
+.swiper-button-prev
+	left: 18px
+	background-image: url("data:image/svg+xml,%3Csvg width='23' height='36' viewBox='0 0 23 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.252 4.8683C22.6604 4.47495 22.6604 3.821 22.252 3.42765L19.3861 0.667943C18.9988 0.29504 18.3861 0.29504 17.9988 0.667943L0.748038 17.2797C0.339558 17.673 0.339556 18.327 0.748038 18.7203L17.9988 35.3321C18.3861 35.705 18.9988 35.705 19.3861 35.3321L22.252 32.5723C22.6604 32.179 22.6604 31.5251 22.252 31.1317L9.36313 18.7203C8.95465 18.327 8.95465 17.673 9.36313 17.2797L22.252 4.8683Z' fill='%23682700'/%3E%3C/svg%3E%0A")
+
+.swiper-button-next
+	right: 18px
+	background-image: url("data:image/svg+xml,%3Csvg width='23' height='36' viewBox='0 0 23 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.748034 31.1317C0.339552 31.5251 0.339552 32.179 0.748034 32.5723L3.61391 35.3321C4.00115 35.705 4.61394 35.705 5.00118 35.3321L22.252 18.7203C22.6604 18.327 22.6604 17.673 22.252 17.2797L5.00119 0.667943C4.61394 0.295037 4.00116 0.295037 3.61391 0.667939L0.748038 3.42765C0.339557 3.821 0.339557 4.47495 0.748038 4.8683L13.6369 17.2797C14.0454 17.673 14.0454 18.327 13.6369 18.7203L0.748034 31.1317Z' fill='%23682700'/%3E%3C/svg%3E%0A")
+
 @media only screen and (max-width : 750px)
 	.wrapper
 		padding: 0 16px
@@ -93,6 +125,14 @@ button
 @import "components/header"
 @import "components/main"
 @import "components/footer"
+@import "components/page"
+@import "components/product"
+@import "components/personalArea"
+@import "components/idea"
+@import "components/prizes"
+@import "components/faq"
+@import "components/notFound"
+@import "components/cookie"
 
 .tab
 	display: none

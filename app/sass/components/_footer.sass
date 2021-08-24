@@ -1,16 +1,14 @@
 @import "vars"
 
 .footer
-	position: fixed
-	bottom: 0
-	left: 0
+	padding-top: 10px
 	width: 100%
 	background: #fff
 	z-index: 500
 	.wrapper
 		max-width: 1170px
 	&-top
-		display: flex
+		display: none
 		align-items: center
 		justify-content: center
 		padding: 18px 10px
@@ -39,7 +37,6 @@
 			background-size: contain
 	&-wrap
 		padding: 18px 0 19px
-		display: none
 	&-middle
 		text-align: center
 		padding-bottom: 51px
@@ -112,6 +109,16 @@
 			&-toggle
 				&::after
 					transform: translate(0,-50%) rotate(180deg)
+	&.footer-fixed
+		position: fixed
+		bottom: 0
+		left: 0
+		padding-top: 0
+		.footer
+			&-top
+				display: flex
+			&-wrap
+				display: none
 
 .social-list
 	display: flex

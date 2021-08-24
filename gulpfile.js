@@ -27,10 +27,11 @@ gulp.task('common-js', function() {
 
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
+		'app/libs/jquery.min.js',
 		'app/libs/swiper/swiper-bundle.min.js',
-		'app/libs/fancybox/jquery.fancybox.min.js',
-		'app/libs/mask/mask.js',
-		'app/js/common.min.js', // Всегда в конце
+		'app/libs/mCustomScrollbar/jquery.mCustomScrollbar.min.js',
+		'app/libs/jquery.inputmask.min.js',
+		'app/libs/jquery.validate.min.js',
 		])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Минимизировать весь js (на выбор)
@@ -84,6 +85,7 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 
 	var buildJs = gulp.src([
 		'app/js/scripts.min.js',
+		'app/js/common.js',
 		]).pipe(gulp.dest('dist/js'));
 
 	var buildFonts = gulp.src([
