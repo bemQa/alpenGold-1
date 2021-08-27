@@ -1,17 +1,317 @@
 @import "vars"
 
 .idea
+	.page
+		&-top
+			padding-bottom: 44px
+			.wrapper
+				max-width: 1322px
+		&-content
+			padding: 81px 0 83px
+	&-row
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+		justify-content: center
+		margin: 0 -25px
+	&-main,&-add
+		padding: 0 25px
+	&-main
+		max-width: 600px
+		width: 100%
+		padding-left: 131px
+		&__wrap
+			display: flex
+			justify-content: flex-end
+			min-height: 205px
+			text-align: center
+			background: rgba(191, 87, 49, 0.3)
+			border: 1px dashed #fff
+			border-radius: 20px
+			padding: 21px 93px 22px
+			position: relative
+		&__info
+			max-width: 170px
+			width: 100%
+			.primary-btn
+				display: block
+				margin-top: 6px
+		&__human
+			width: 250px
+			position: absolute
+			top: -42px
+			left: -106px
+			img,svg
+				display: block
+				max-width: 250px
+				margin: 0 auto
+		&__head
+			display: block
+			font-family: $OfficinaSansBlackC
+			font-size: 26px
+			line-height: 33px
+			font-weight: 900
+			text-transform: uppercase
+			color: #FCE7A7
+			margin: 0 0 6px
+		&__name
+			display: block
+			text-align: center
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			background: linear-gradient(76.65deg, #FCE7A7 28.9%, #F6B748 58.74%, #F7B645 83.14%)
+			border-radius: 30px
+			font-family: $OfficinaSansBlackC
+			font-size: 18px
+			line-height: 20px
+			font-weight: 900
+			text-transform: uppercase
+			color: #531D0D
+			padding: 17px 15px 13px
+			z-index: 10
+	&-add
+		max-width: 300px
+		width: 100%
+		&__wrap
+			display: block
+			min-height: 205px
+			background: rgba(191, 87, 49, 0.3)
+			border: 1px dashed #fff
+			border-radius: 20px
+			padding: 35px 15px 15px
+			text-align: center
+			.idea-title
+				max-width: 180px
+				margin: 0 auto
+	&-plus
+		display: block
+		min-width: 70px
+		width: 70px
+		height: 70px
+		border-radius: 50%
+		background: #FCAE18
+		text-align: center
+		font-size: 80px
+		line-height: 70px
+		font-weight: normal
+		text-transform: uppercase
+		color: #fff
+		text-shadow: -1px 1px 1px #531D0D
+		margin: 0 auto 20px
+	&-title
+		display: block
+		font-family: $OfficinaSansBlackC
+		font-size: 20px
+		line-height: 1.25
+		font-weight: 900
+		color: #fff
+		text-transform: uppercase
+	&-col
+		position: absolute
+		top: 10px
+		left: 55px
+		max-width: 250px
+		min-width: 250px
+		width: 250px
+		.idea-main__human
+			position: relative
+			top: auto
+			bottom: auto
+			left: auto
+			right: auto
+	&-all
+		width: 100%
+		padding-right: 30px
+		padding-left: 30px
+		position: relative
+	&-slide
+		padding: 0 25px
+	&-item
+		padding-top: 21px
+		min-height: 280px
+		text-align: center
+		&__top
+			display: block
+			min-height: 190px
+			background: rgba(191, 87, 49, 0.3)
+			border: 1px solid #fff
+			border-radius: 20px
+			padding: 54px 15px 40px
+			position: relative
+			margin-bottom: 8px
+		&__vote
+			position: absolute
+			top: -21px
+			right: -25px
+			display: block
+			width: 72px
+			height: 72px
+			border-radius: 50%
+			text-align: center
+			background: linear-gradient(76.65deg, #FCE7A7 28.9%, #F6B748 58.74%, #F7B645 83.14%)
+			font-family: $OfficinaSansBlackC
+			font-size: 10px
+			line-height: 1.3
+			font-weight: 900
+			color: #531D0D
+			text-transform: uppercase
+			padding: 15px 5px
+			b
+				display: block
+				font-size: 24px
+				line-height: 30px
+				font-weight: 900
+		&__title
+			display: block
+			font-family: $OfficinaSansBlackC
+			font-size: 20px
+			line-height: 1.25
+			font-weight: 900
+			text-shadow: -1px 1px 1px #531D0D
+			text-transform: uppercase
+			color: #fff
+			margin: 0
+		&__name
+			position: absolute
+			bottom: 9px
+			left: 0
+			display: block
+			width: 100%
+			text-align: center
+			font-family: $OfficinaSansBoldC
+			font-size: 16px
+			line-height: 20px
+			font-weight: bold
+			color: #fff
+		&__more
+			display: inline-block
+			border-bottom: 1px dashed #FCE7A7
+			font-size: 12px
+			line-height: 14px
+			font-weight: normal
+			color: #FCE7A7
+			padding-bottom: 1px
+			margin-bottom: 12px
+		.primary-btn
+			min-width: 170px
+		&.idea-itemMain
+			.idea
+				&-item
+					&__top
+						background: rgba(54, 16, 5, 0.5)
+					&__title,&__name
+						color: #F6B748
+						text-shadow: -1px 1px 1px #531D0D
+	&.idea-second
+		.page
+			&-subtitle
+				max-width: 770px
+			&-content
+				padding: 93px 0 100px
+		.idea
+			&-row
+				//padding-left: 305px
+				padding-left: 300px
+				position: relative
 	.swiper-button-prev,.swiper-button-next
+		top: 98px
+		margin: 0
+		transform: none
+	.swiper-button-prev
+		left: 0
+	.swiper-button-next
+		right: -5px
 
 @media only screen and (max-width : 1220px)
-	.header	
-@media only screen and (max-width : 1020px)
-	.header
+	.idea
+		&-col
+			left: 15px
+		.swiper-button-prev
+			left: 10px
+		.swiper-button-next
+			right: 10px
+		&.idea-second
+			.idea
+				&-row
+					padding-left: 280px
+
 @media only screen and (max-width : 890px)
-	.header
+	.idea
+		.page
+			&-content
+				padding: 0 0 60px
+		&-row
+			display: block
+		&-main,&-add
+			max-width: 330px
+			padding: 0 7.5px
+			margin: 0 auto
+		&-main
+			padding: 200px 0 0
+			margin-bottom: 20px
+			&__human
+				top: -244px
+				left: 50%
+				transform: translate(-50%,0)
+			&__wrap
+				display: block
+				padding: 40px 15px 15px
+			&__info
+				max-width: 220px
+				margin: 0 auto
+				.idea-title
+					margin-bottom: 8px
+				.primary-btn
+					display: inline-block
+					min-width: 125px
+			&__head
+				max-width: 170px
+				margin: 0 auto 8px
+		&-col
+			.idea-main__human
+				transform: none
+
 @media only screen and (max-width : 768px)
-	.header
+	.idea
+		overflow: visible
+		.page
+			&-top
+				padding: 0
+				.wrapper
+					padding-top: 38px
+					padding-bottom: 65px
+		&-all
+			padding: 243px 0 0
+		&.idea-second
+			.page
+				&-content
+					padding: 0 0 20px
+			.idea
+				&-row
+					padding: 0
+					margin: 0
+
 @media only screen and (max-width : 750px)
-	.header
-@media only screen and (max-width : 620px)
-	.header
+	.idea
+		&-col
+			top: -44px
+			left: 50%
+			transform: translate(-50%,0)
+		&-slider
+			.swiper-wrapper
+				display: block
+		&-slide
+			padding-bottom: 37px
+		&-item
+			padding-top: 20px
+			&__top
+				padding: 66px 15px 30px
+			&__vote
+				right: auto
+				left: 50%
+				top: -20px
+				transform: translate(-50%,0)
+		.swiper-button-next, .swiper-button-prev
+			display: none!important

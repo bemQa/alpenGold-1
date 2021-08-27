@@ -37,23 +37,306 @@
 		margin: 0 auto
 		position: relative
 		z-index: 10
+		text-shadow: -1px 1px 1px #531D0D
+	&-subtitle
+		display: block
+		text-align: center
+		max-width: 604px
+		font-size: 22px
+		line-height: 25px
+		font-weight: normal
+		color: #531D0D
+		margin: 22px auto 0
+	&-ico
+		position: absolute
+		img,svg
+			display: block
+		&-1
+			top: -38px
+			left: 222px
+			img,svg
+				max-width: 132px
+		&-2
+			bottom: -88px
+			right: 0
+			img,svg
+				max-width: 246px
+	&-row
+		display: flex
+		flex-flow: row nowrap
+		justify-content: space-between
+	&-col-1,&-col-3
+		min-width: 350px
+		width: 350px
+	&-col-2
+		text-align: center
+		.page
+			&-name
+				display: none
+	&-col-3
+		margin-top: -10px
+	&-name
+		display: block
+		font-family: $OfficinaSansBlackC
+		font-size: 18px
+		line-height: 32px
+		font-weight: 900
+		text-transform: uppercase
+		color: #531D0D
+		margin: 0 0 12px
+		span
+			display: block
+			font-size: 28px
+			line-height: 32px
+	&-link
+		display: inline-block
+		font-size: 16px
+		line-height: 18px
+		font-weight: normal
+		text-decoration: underline
+		color: #EB2316
+		margin: 7px 0 23px
+		&:hover
+			text-decoration: none
+	&-list
+		li
+			padding-bottom: 15px
+			a
+				display: flex
+				flex-flow: row nowrap
+				align-items: center
+				justify-content: center
+				font-size: 14px
+				line-height: 16px
+				color: #531D0D
+				.hb-ico
+					margin-right: 8px
+	&-block
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		margin-bottom: 19px
+		&__wrap
+			min-width: 180px
+			width: 180px
+			min-height: 64px
+			display: flex
+			align-items: center
+			justify-content: center
+			background: #fff
+			box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.08)
+			border-radius: 30px
+			padding: 13px 12px 13px 38px
+			font-family: $OfficinaSansBoldC
+			font-size: 16px
+			line-height: 19px
+			font-weight: bold
+			color: #531D0D
+			position: relative
+		&__img
+			position: absolute
+			top: 50%
+			left: -12px
+			transform: translate(-50%,-50%)
+			img,svg
+				max-width: 74px
+		&__name
+			display: block
+			width: 100%
+		&__num
+			padding: 0 25px 0 9px
+			position: relative
+			.prompt
+				position: absolute
+				top: 0
+				right: 6px
+				&-wrap
+					left: auto
+					right: 0
+					transform: none
+					text-align: center
+			b
+				display: block
+				font-family: $OfficinaSansBlackC
+				font-size: 70px
+				line-height: 1
+				font-weight: 900
+				text-transform: uppercase
+				color: #531D0D
+				margin: 0
+
+.pagePromo
+	display: block
+	max-width: 273px
+	text-align: center
+	background: rgba(191, 87, 49, 0.3)
+	border: 1px solid #fff
+	border-radius: 20px
+	padding: 3px 10px 5px
+	&-top
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+		justify-content: center
+		padding-bottom: 2px
+	&-tit
+		display: block
+		font-family: $OfficinaSansBlackC
+		font-size: 16px
+		line-height: 20px
+		font-weight: 900
+		text-transform: uppercase
+		color: #fff
+		text-shadow: -1px 1px 2px rgba(104, 39, 0, 0.75)
+		margin: 0 4px 0 0
+	&-form
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+		justify-content: center
+		max-width: 231px
+		margin: 0 auto 8px
+		input
+			display: block
+			width: 100%
+			height: 30px
+			border: none
+			border-radius: 20px
+			text-align: center
+			background: #fff
+			font-family: $OfficinaSansBlackC
+			font-size: 16px
+			line-height: 20px
+			font-weight: 900
+			text-transform: uppercase
+			color: #531D0D
+	&-ico
+		display: inline-block
+		min-width: 30px
+		width: 30px
+		height: 30px
+		background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='15' cy='15' r='15' fill='%23531D0D'/%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M7.18502 7H16.0293C16.6596 7 17.1724 7.5128 17.1724 8.1431V10.826H16.1289V8.1431C16.1289 8.08817 16.0842 8.04348 16.0293 8.04348H7.18502C7.1301 8.04348 7.08541 8.08817 7.08541 8.1431V16.9873C7.08541 17.0423 7.1301 17.087 7.18502 17.087H9.78429V18.1305H7.18502C6.55473 18.1305 6.04193 17.6177 6.04193 16.9873V8.1431C6.04196 7.5128 6.55473 7 7.18502 7Z' fill='white'/%3E%3Cpath d='M11.9709 11.8696H20.8151C21.4455 11.8696 21.9583 12.3824 21.9583 13.0128V21.857C21.9582 22.4873 21.4455 23.0001 20.8151 23.0001H11.9709C11.3405 23.0001 10.8277 22.4873 10.8277 21.857V13.0128C10.8277 12.3824 11.3406 11.8696 11.9709 11.8696ZM11.9708 21.9567H20.8151C20.8701 21.9567 20.9148 21.912 20.9148 21.857V13.0128C20.9148 12.9578 20.8701 12.9131 20.8151 12.9131H11.9709C11.9159 12.9131 11.8712 12.9578 11.8712 13.0128V21.857H11.8712C11.8712 21.912 11.9159 21.9567 11.9708 21.9567Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='16' height='16' fill='white' transform='matrix(-1 0 0 1 22 7)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+		cursor: pointer
+		margin-left: 6px
+	&-total
+		display: block
+		font-family: $OfficinaSansBoldC
+		font-size: 12px
+		line-height: 14px
+		font-weight: bold
+		color: #fff
+		margin: 0
 
 @media only screen and (max-width : 1220px)
-	.header	
+	.page
+		&-ico
+			&-1
+				top: -38px
+				left: 25px
+				img,svg
+					max-width: 65px
+			&-2
+				bottom: -46px
+				right: 28px
+				img,svg
+					max-width: 92px
+
 @media only screen and (max-width : 1020px)
-	.header
-@media only screen and (max-width : 890px)
-	.header
+	.page
+		&-row
+			flex-flow: row wrap
+			align-items: center
+		&-col
+			&-2
+				display: flex
+				flex-flow: row wrap
+				align-items: center
+				justify-content: center
+				max-width: 100%
+				width: 100%
+				order: -1
+				padding-bottom: 17px
+				.page-title
+					margin-bottom: 7px
+					width: 100%
+					order: 1
+				.page
+					&-name
+						display: block
+						width: 100%
+						order: 2
+			&-3
+				.page-block
+					&:last-child
+						margin-bottom: 0
+		&-name
+			display: none
+		&-list
+			width: 100%
+			order: 3
+			li
+				padding-bottom: 10px
+		&-link
+			order: 4
+			margin: 0
+
 @media only screen and (max-width : 768px)
 	.page
+		&-name
+			font-size: 16px
+			line-height: 20px
+			margin-bottom: 13px
+			span
+				font-size: 22px
 		&-top
 			min-height: 96px
 			padding: 30px 0 25px
+			z-index: 500
 		&-title
 			font-size: 32px
 			line-height: 40px
-
-@media only screen and (max-width : 750px)
-	.header
-@media only screen and (max-width : 620px)
-	.header
+		&-ico
+			&-1
+				top: -30px
+				left: 50px
+		&-subtitle
+			font-size: 16px
+			line-height: 18px
+			margin-top: 20px
+		&-col
+			&-1,&-3
+				max-width: 100%
+				min-width: auto
+				width: 100%
+			&-1
+				order: 2
+			&-3
+				order: 3
+				padding-left: 38px
+		&-block
+			max-width: 290px
+			margin: 0 auto 12px
+			background: #fff
+			box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.08)
+			border-radius: 30px
+			&__wrap
+				box-shadow: none
+				background: transparent
+				border-radius: 0
+				min-width: auto
+				max-width: 100%
+				width: 100%
+				padding-left: 40px
+			&__num
+				padding-right: 40px
+				.prompt
+					top: 4px
+					right: 16px
+				b
+					font-size: 50px
+					padding-top: 6px
+	.pagePromo
+		margin: 0 auto 20px

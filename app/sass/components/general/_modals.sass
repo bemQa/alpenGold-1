@@ -50,6 +50,14 @@
 	&.open
 		visibility: visible
 		opacity: 1
+	&-center
+		text-align: center
+		margin-bottom: 20px
+	.prompt-text.prompt
+		text-align: center
+		margin-bottom: 25px
+		.modal-link
+			opacity: 0.7
 	&-wrap
 		position: relative
 		&::before,&::after
@@ -240,6 +248,54 @@
 				box-shadow: none
 				border-radius: 20px
 				overflow: hidden
+	&.modalInfo
+		.modal
+			&-block
+				text-align: center
+				p
+					font-family: $OfficinaSansBoldC
+					font-size: 18px
+					line-height: 21px
+					font-weight: bold
+					color: #fff
+					margin: 0 0 24px
+				.primary-btn
+					min-width: 194px
+					margin-bottom: 28px
+			&-name
+				display: block
+				font-family: $OfficinaSansBoldC
+				font-size: 16px
+				line-height: 20px
+				font-weight: bold
+				color: #fff
+				margin: 0 0 9px
+			&-voices
+				display: block
+				font-family: $OfficinaSansBlackC
+				font-size: 24px
+				line-height: 30px
+				font-weight: 900
+				color: #FCE7A7
+				text-transform: uppercase
+				margin: 0
+	&.modalThanks
+		.second-btn
+			display: block
+			min-width: 158px
+			max-width: 158px
+			margin: 0 auto
+	&.noLikes
+		.modal-title
+			font-size: 18px
+			line-height: 23px
+			padding-bottom: 24px
+			margin: 0
+		.second-btn,.primary-btn
+			display: block
+			width: 100%
+		.primary-btn
+			margin: 10px 0 23px
 
 .prize
 	&-question

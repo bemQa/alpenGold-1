@@ -114,9 +114,73 @@ button
 	right: 18px
 	background-image: url("data:image/svg+xml,%3Csvg width='23' height='36' viewBox='0 0 23 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.748034 31.1317C0.339552 31.5251 0.339552 32.179 0.748034 32.5723L3.61391 35.3321C4.00115 35.705 4.61394 35.705 5.00118 35.3321L22.252 18.7203C22.6604 18.327 22.6604 17.673 22.252 17.2797L5.00119 0.667943C4.61394 0.295037 4.00116 0.295037 3.61391 0.667939L0.748038 3.42765C0.339557 3.821 0.339557 4.47495 0.748038 4.8683L13.6369 17.2797C14.0454 17.673 14.0454 18.327 13.6369 18.7203L0.748034 31.1317Z' fill='%23682700'/%3E%3C/svg%3E%0A")
 
+.swiper-white.swiper-button-prev
+	min-width: 40px
+	width: 40px
+	height: 41px
+	background-image: url("data:image/svg+xml,%3Csvg width='40' height='41' viewBox='0 0 40 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='19.7896' cy='20.6757' rx='19.7895' ry='20.3243' transform='rotate(180 19.7896 20.6757)' fill='white'/%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M21.3286 30.303L23.5337 29.7135L15.5939 21.2105L23.5337 12.7075L21.3286 12.1181L12.8367 21.2105L21.3286 30.303Z' fill='%23531D0D'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='10.697' height='18.1849' fill='white' transform='translate(23.5337 30.303) rotate(180)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+
+.swiper-white.swiper-button-next
+	min-width: 41px
+	width: 41px
+	height: 40px
+	background-image: url("data:image/svg+xml,%3Csvg width='40' height='41' viewBox='0 0 40 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='20.2104' cy='20.6756' rx='19.7895' ry='20.3243' fill='white'/%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M18.6714 11.0483L16.4663 11.6378L24.4061 20.1408L16.4663 28.6438L18.6714 29.2333L27.1633 20.1408L18.6714 11.0483Z' fill='%23531D0D'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='10.697' height='18.1849' fill='white' transform='translate(16.4663 11.0483)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+
+.prompt
+	position: relative
+	cursor: pointer
+	&-wrap
+		display: inline-block
+		position: absolute
+		top: 100%
+		//left: 96px
+		left: 50%
+		transform: translate(-50%,0)
+		//width: 398px
+		width: 300px
+		background: #F7B645
+		box-shadow: 0px 0px 15px rgba(83, 29, 13, 0.3)
+		padding: 12px
+		border-radius: 10px
+		font-size: 10px
+		line-height: 11px
+		color: #531D0D
+		z-index: 50
+		opacity: 0
+		visibility: hidden
+		transition: $transition
+		.close-ico
+			display: none
+			position: absolute
+			top: 10px
+			right: 10px
+			cursor: pointer
+			z-index: 20
+	&:hover
+		.prompt
+			&-wrap
+				opacity: 1
+				visibility: visible
+	&.active
+		.prompt
+			&-wrap
+				opacity: 1!important
+				visibility: visible!important
+
 @media only screen and (max-width : 750px)
 	.wrapper
 		padding: 0 16px
+	.prompt
+		&-wrap
+			width: 300px
+			padding: 31px 10px 12px
+			.close-ico
+				display: block
+		&:hover
+			.prompt
+				&-wrap
+					opacity: 0
+					visibility: hidden
 
 @import "components/general/icons"
 @import "components/general/buttons"
@@ -133,6 +197,7 @@ button
 @import "components/faq"
 @import "components/notFound"
 @import "components/cookie"
+@import "components/sitemap"
 
 .tab
 	display: none

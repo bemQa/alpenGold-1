@@ -1,17 +1,549 @@
 @import "vars"
 
 .personalArea
+	.page
+		&-top
+			min-height: 251px
+			padding: 42px 0 30px
+			.page-title
+				line-height: 1
+			.wrapper
+				max-width: 1334px
+		&-content
+			padding: 44px 0 52px
+			.wrapper
+				max-width: 1380px
+	&-tabs
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+		justify-content: center
+		padding-bottom: 25px
+		li
+			padding: 0 10px
+			a
+				display: block
+				border-radius: 30px
+				text-align: center
+				span
+					display: block
+					padding: 4px 5px
+					border-radius: 30px
+					border: 1px solid transparent
+				b
+					display: block
+					min-width: 250px
+					padding: 14px 10px 12px
+					background: linear-gradient(76.65deg, #FCE7A7 28.9%, #F6B748 58.74%, #F7B645 83.14%)
+					border-radius: 30px
+					font-family: $OfficinaSansBlackC
+					font-size: 20px
+					line-height: 1.3
+					font-weight: 900
+					text-transform: uppercase
+					color: rgba(#531D0D, 0.5)
+					border-radius: 30px
+				&.active
+					b
+						color: #531D0D
+					span
+						border-color: #FCE7A7
+	&-button
+		padding-top: 37px
+		text-align: center
+		.primary-btn
+			min-width: 278px
+
 	.swiper-button-prev,.swiper-button-next
 
+.myCodes
+	max-height: 540px
+	.mCSB_inside>.mCSB_container
+		margin-right: 0
+	&-content
+		padding: 0 25px
+	&-all
+		display: flex
+		flex-flow: row wrap
+		justify-content: center
+		margin: 0 -10px
+	&-col
+		width: 25%
+		padding: 0 10px 11px
+	&-wrap
+		min-height: 225px
+		text-align: center
+		background: rgba(191, 87, 49, 0.3)
+		border: 1px solid rgba(255, 255, 255, 0.5)
+		border-radius: 20px
+		padding: 11px 10px 19px
+		position: relative
+		margin-top: 34px
+		p
+			max-width: 214px
+			margin: 0 auto
+			font-family: $OfficinaSansBoldC
+			font-size: 16px
+			line-height: 19px
+			font-weight: bold
+			color: #fff
+		.primary-btn
+			display: block
+			max-width: 277px
+			margin: 15px auto 0
+			box-shadow: -2px 2px 2px rgba(104, 39, 0, 0.75)
+		.second-btn
+			display: block
+			white-space: normal
+			max-width: 215px
+			width: 100%
+			margin: 0 auto
+		&.notActive
+			opacity: 0.5
+		&.myCodesMain,&.myCodesText
+			display: flex
+			flex-flow: row wrap
+			align-items: center
+			justify-content: center
+			div
+				width: 100%
+	&-date,&-code,&-subtitle,&-title
+		display: block
+	&-date,&-code
+		color: #fff
+	&-date
+		font-size: 16px
+		line-height: 18px
+		margin-bottom: 4px
+	&-code
+		font-family: $OfficinaSansBlackC
+		font-size: 28px
+		line-height: 35px
+		font-weight: 900
+		text-transform: uppercase
+		text-shadow: -1px 1px 1px #531D0D
+		margin: 0 0 16px
+	&-row
+		max-width: 244px
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+		padding-bottom: 17px
+		text-align: left
+		margin: 0 auto
+	&-img
+		min-width: 74px
+		width: 74px
+		margin-right: 13px
+		img,svg
+			display: block
+			max-width: 74px
+	&-subtitle
+		font-family: $OfficinaSansBoldC
+		font-size: 16px
+		line-height: 19px
+		font-weight: bold
+		color: #fff
+		margin: 0 0 5px
+	&-title
+		font-family: $OfficinaSansBlackC
+		font-size: 20px
+		line-height: 1.25
+		font-weight: 900
+		text-transform: uppercase
+		color: #FCE7A7
+		margin: 0
+	&-prompt
+		position: absolute
+		top: -34px
+		left: 50%
+		transform: translate(-50%,0)
+		.prompt
+			&-top
+				display: flex
+				align-items: center
+				justify-content: center
+				padding: 6px
+				width: 212px
+				height: 33px
+				background: #EB2316
+				border-radius: 5px 5px 0 0
+				text-align: center
+				font-family: $OfficinaSansBoldC
+				font-size: 16px
+				line-height: 20px
+				font-weight: bold
+				color: #fff
+				.hb-ico
+					margin-left: 4px
+
+.ideasForAStar
+	&-all
+		display: flex
+		flex-flow: row nowrap
+		margin: 0 auto
+		padding: 20px 17px
+		.mCSB_scrollTools
+			right: 8px
+	&-col
+		width: 50%
+		padding: 0 8px
+		&.ideasForAStar-second
+			.ideasForAStar
+				&-row
+					max-width: 485px
+					.col-2
+						min-width: 150px
+						width: 150px
+					.col-3
+						width: 100%
+	&-title
+		display: block
+		text-align: center
+		font-family: $OfficinaSansBlackC
+		font-size: 28px
+		line-height: 35px
+		font-weight: 900
+		text-transform: uppercase
+		color: #fff
+		margin: 0 0 18px
+	&-wrap
+		display: block
+		min-height: 416px
+		background: rgba(191, 87, 49, 0.3)
+		border: 1px solid #fff
+		border-radius: 20px
+		position: relative
+		.primary-btn
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translate(-50%,50%)
+			display: block
+			min-width: 214px
+			width: 214px
+			padding: 12px 13px 10px
+	&-top,&-row
+		display: flex
+		flex-flow: row nowrap
+	&-top
+		font-size: 16px
+		line-height: 18px
+		color: #fff
+		padding: 28px 39px 23px
+	&-row
+		padding: 0 39px 20px
+		font-size: 18px
+		line-height: 21px
+		font-weight: bold
+		color: #fff
+		span
+			display: block
+			&.mob
+				display: none
+		a
+			display: inline-block
+			font-size: 12px
+			line-height: 14px
+			font-weight: normal
+			color: #FCE7A7
+			padding-bottom: 1px
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+		.text-red
+			color: #F7473C
+	&-table
+		max-height: 288px
+
+.col
+	&-1
+		min-width: 132px
+		width: 132px
+	&-2
+		min-width: 233px
+		width: 233px
+		padding-right: 30px
+	&-3
+		min-width: 132px
+		width: 132px
+	&-4
+		min-width: 60px
+		width: 60px
+
+.myPrizes
+	padding: 5px 0 0
+	&-head
+		max-height: 874px
+		margin-bottom: 54px
+	&-row
+		display: flex
+		flex-flow: row wrap
+	&-col
+		width: 25%
+		padding: 20px 10px 0
+	&-wrap
+		display: block
+		height: 416px
+		//padding-bottom: 130.81967213114754%
+		background: rgba(191, 87, 49, 0.3)
+		border: 1px solid #fff
+		border-radius: 20px
+		position: relative
+		.second-btn
+			min-width: 215px
+			position: absolute
+			bottom: 40px
+			left: 50%
+			transform: translate(-50%,0)
+		&.myPrizes-2
+			background: linear-gradient(76.65deg, rgba(252, 231, 167, 0.5) 28.9%, rgba(246, 183, 72, 0.5) 58.74%, rgba(247, 182, 69, 0.5) 83.14%)
+		&.myPrizes-3
+			.myPrizes
+				&-img
+					img,svg
+						max-width: 178px
+						margin: 0 auto
+		&.myPrizes-4
+			background: linear-gradient(76.65deg, #FCE7A7 28.9%, #F6B748 58.74%, #F7B645 83.14%)
+			border: none
+			.second-btn
+				color: #531D0D
+				border-color: #531D0D
+				text-shadow: none
+			.myPrizes
+				&-title
+					max-width: 300px
+					color: #531D0D
+				&-inf
+					color: #531D0D
+	&-light
+		position: absolute
+		top: 52%
+		left: 50%
+		transform: translate(-50%,-50%)
+		img,svg
+			display: block
+	&-title
+		position: absolute
+		top: 35px
+		left: 50%
+		transform: translate(-50%,0)
+		display: block
+		width: 100%
+		max-width: 230px
+		padding: 0 20px
+		font-family: $OfficinaSansBlackC
+		font-size: 20px
+		line-height: 1.25
+		font-weight: 900
+		text-transform: uppercase
+		color: #fff
+		text-shadow: -1px 1px 1px #531D0D
+		text-align: center
+	&-img
+		display: block
+		width: 100%
+		padding: 0 22px
+		position: absolute
+		top: 64px
+		left: 50%
+		transform: translate(-50%,0)
+		img,svg
+			display: block
+	&-logo
+		position: absolute
+		top: -21px
+		left: 50%
+		transform: translate(-50%,0)
+		img,svg
+			display: block
+			max-height: 52px
+	&-code
+		position: absolute
+		bottom: 80px
+		left: 0
+		width: 100%
+		text-align: center
+		font-family: $OfficinaSansBoldC
+		font-size: 16px
+		line-height: 19px
+		font-weight: bold
+		color: #fff
+	&-inf
+		position: absolute
+		bottom: 15px
+		left: 0
+		width: 100%
+		text-align: center
+		font-size: 14px
+		line-height: 16px
+		color: #fff
+
+
+@media only screen and (max-width : 1400px)
+	.ideasForAStar
+		&-all
+			display: block
+			padding: 20px 0 0
+		&-col
+			max-width: 640px
+			width: 100%
+			padding: 0 0 60px
+			margin: 0 auto
+
 @media only screen and (max-width : 1220px)
-	.header	
+	.myCodes
+		&-content
+			padding-left: 0
+		&-col
+			width: 33.333%
+	.myPrizes
+		&-col
+			width: 33.333%
+
 @media only screen and (max-width : 1020px)
-	.header
+	.personalArea
+
 @media only screen and (max-width : 890px)
-	.header
+	.personalArea
+		&-button
+			display: none
+		&-tabs
+			padding-bottom: 30px
+			li
+				padding: 0 3.5px
+				a
+					span
+						padding: 0
+						border: none
+					b
+						display: flex
+						align-items: center
+						justify-content: center
+						min-width: 150px
+						width: 150px
+						height: 50px
+						font-size: 14px
+						line-height: 16px
+						padding: 12px 9px 6px
+	.myCodes
+		max-height: 100%
+		&-content
+			padding: 0
+		&-col
+			width: 50%
+	.myPrizes
+		&-row
+			margin: 0 -10px
+		&-col
+			width: 50%
+		&-wrap
+			height: auto
+			padding-bottom: 130.81967213114754%
+			&.myPrizes-2
+				margin-top: 20px
+
 @media only screen and (max-width : 768px)
-	.header
+	.personalArea
+		.page
+			&-top
+				min-height: 455px
+				padding: 0
+				position: relative
+				.prompt-wrap
+					width: 268px
+				.wrapper
+					min-height: 455px
+					padding-top: 30px
+			&-col-3
+				position: absolute
+				bottom: -26px
+				left: 50%
+				transform: translate(-50%,0)
+			&-content
+				padding: 50px 0
+
 @media only screen and (max-width : 750px)
-	.header
+	.ideasForAStar
+		&-col
+			max-width: 345px
+			&.ideasForAStar-second .ideasForAStar-row
+				.col-3,.col-2
+					min-width: 128px
+					width: 128px
+		&-top
+			padding: 16px 19px 35px
+			.col-1
+				display: none
+			.col-2
+				min-width: 128px
+				width: 128px
+				padding-right: 10px
+			.col-3
+				min-width: 120px
+				width: 120px
+			.col-4
+				min-width: 50px
+				width: 50px
+		&-row
+			padding: 0 19px 30px
+			font-size: 16px
+			line-height: 19px
+			span
+				&.mob
+					display: block
+					font-family: $OfficinaSansBookC
+					font-weight: normal
+			.col-1
+				display: none
+			.col-2
+				min-width: 128px
+				width: 128px
+				padding-right: 10px
+			.col-3
+				min-width: 120px
+				width: 120px
+			.col-4
+				min-width: 50px
+				width: 50px
+
 @media only screen and (max-width : 620px)
-	.header
+	.personalArea
+		&-tabs
+			li
+				a
+					b
+						min-width: 110px
+						width: 110px
+	.myCodes
+		&-col
+			width: 100%
+			padding-bottom: 20px
+		&-wrap
+			margin-top: 0
+			&.myCodesPrompt
+				margin-top: 42px
+	.myPrizes
+		&-head
+			max-height: 1190px
+		&-col
+			width: 100%
+			max-width: 305px
+			margin: 0 auto
+
+@media only screen and (max-width : 370px)
+	.personalArea
+		&-tabs
+			li
+				a
+					b
+						min-width: 100px
+						width: 100px
+	.ideasForAStar
+		&-all
+			margin: 0 -16px
+		&-top
+			padding: 15px 10px 35px
+		&-row
+			padding: 0 10px 30px

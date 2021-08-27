@@ -27,6 +27,7 @@
 		display: block
 		padding-bottom: 77.78%
 		position: relative
+		cursor: pointer
 		img,svg,a
 			display: block
 			position: absolute
@@ -66,6 +67,13 @@
 		opacity: 0
 		visibility: hidden
 		transition: $transition
+		.close-ico
+			display: none
+			position: absolute
+			top: 6px
+			right: 6px
+			cursor: pointer
+			z-index: 20
 
 @media only screen and (max-width : 1220px)
 	.main
@@ -76,12 +84,27 @@
 	.main
 		&-tile
 			width: 25%
+		&-wrap
+			&:hover
+				.main
+					&-text
+						opacity: 0
+						visibility: hidden
+			&.active-text
+				.main-text
+					opacity: 1
+					visibility: visible
 		&-text
-			width: 100%
-			bottom: 0
-			opacity: 1
-			visibility: visible
-			border-radius: 0 0 2px 2px
+			width: 91.2%
+			bottom: 8px
+			box-shadow: 0px 0px 15px rgba(83, 29, 13, 0.3)
+			border-radius: 10px
+			padding: 19px 5px 3px
+			text-align: center
+			font-size: 12px
+			line-height: 14px
+			.close-ico
+				display: block
 
 @media only screen and (max-width : 750px)
 	body

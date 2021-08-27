@@ -43,7 +43,7 @@
 						<li><a href="#">Призы</a></li>
 						<li><a href="#">Победители</a></li>
 						<li><a href="#">FAQ</a></li>
-						<li><a href="modal-checkIn" class="modal-btn">Личный кабинет</a></li>
+						<li><a href="#" class="active">Личный кабинет</a></li>
 					</ul>
 					<div class="header-buttons">
 						<a href="#" class="primary-btn">зарегистрировать код</a>
@@ -63,16 +63,32 @@
 		<div class="page-top" style="background-image: url(img/page-top-bg-2.svg);">
 			<div class="wrapper">
 				<div class="page-ico page-ico-1"><img src="img/like-1-min.png" alt=""></div>
-				<div class="page-ico page-ico-1"><img src="img/like-2-min.png" alt=""></div>
+				<div class="page-ico page-ico-2"><img src="img/like-2-min.png" alt=""></div>
 				<h1 class="page-title">Идеи для Азамата</h1>
-				<span class="page-subtitle">с ХХ.ХХ по ХХ,ХХ предлагай свои идеи для Азмата Мусагалиева, а после ХХ.ХХ ты сможешь проголосовать за лучшую альпен-лайками. Стань победителем голосования и поучаствуй в реализации своей идеи вместе с ним.</span>
+				<span class="page-subtitle">с ХХ.ХХ по ХХ,ХХ предлагай свои идеи для Азмата Мусагалиева,а после ХХ.ХХ ты сможешь проголосоватьза лучшую альпен-лайками. Стань победителем голосованияи поучаствуй в реализации своей идеи вместе с ним.</span>
 			</div>
 		</div>
 		<div class="page-content">
 			<div class="wrapper">
 				<div class="idea-row">
 					<div class="idea-main">
-						
+						<div class="idea-main__wrap">
+							<div class="idea-main__human">
+								<img src="img/human-min.png" alt="">
+								<span class="idea-main__name">азамат мусагалиев</span>
+							</div>
+							<div class="idea-main__info">
+								<h3 class="idea-main__head">яркая идея от азамата</h3>
+								<h3 class="idea-title">хочешь узнать? жми!</h3>
+								<a href="#modal-info" class="primary-btn modal-btn">подбробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="idea-add">
+						<a href="modal-idea" class="idea-add__wrap modal-btn">
+							<span class="idea-plus">+</span>
+							<h3 class="idea-title">добавить свою идею</h3>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -470,6 +486,37 @@
 				</div>
 			</div>
 			<a href="#" class="primary-btn primary-btn-big">зарегистрировать код</a>
+		</div>
+	</div>
+	<!-- modal-idea -->
+	<div id="modal-idea" class="modal modal-form">
+		<div class="modal-close"></div>
+		<div class="modal-wrap">
+			<form action="">
+				<span class="modal-title">Предложить идею<br>для Азамата</span>
+				<div class="input-text">Неправильный логин или пароль</div>
+				<div class="input-block">
+          <input type="Text" name="Name" placeholder="Название идеи" required>
+          <span class="input-symbols">Не более 40 символов</span>
+        </div>
+        <div class="input-block">
+        	<textarea name="Text" placeholder="Описание идеи"></textarea>
+        </div>
+        <div class="modal-bottom">
+          <button class="primary-btn primary-btn-big">отправить</button>
+        </div>
+			</form>
+		</div>
+	</div>
+	<!-- modal-info -->
+	<div id="modal-info" class="modal modal-form modalInfo">
+		<div class="modal-close"></div>
+		<div class="modal-wrap">
+			<span class="modal-name">Автор: Имя Ф.</span>
+			<span class="modal-title">Заголовок идеи в две-три строки</span>
+			<p>Текст идеи на несколько строк. Текст идеи на несколько строк. Текст идеи на несколько строк. Текст идеи на несколько строк. Текст идеи на несколько строк. Текст идеи на несколько строк.  Текст идеи на несколько строк. </p>
+			<a href="#" class="primary-btn primary-btn-big">проголосовать</a>
+			<span class="modal-voices">27 голосов</span>
 		</div>
 	</div>
 	<script defer src="js/scripts.min.js"></script>

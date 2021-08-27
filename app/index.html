@@ -37,7 +37,7 @@
 			<div class="wrapper">
 				<div class="header-menu">
 					<ul class="header-list">
-						<li><a href="#">Главная</a></li>
+						<li><a href="#" class="active">Главная</a></li>
 						<li><a href="#">Правила</a></li>
 						<li><a href="#">Продукт</a></li>
 						<li><a href="#">Призы</a></li>
@@ -83,10 +83,10 @@
 				<div class="main-wrap"><img src="img/main/prize-7-min.jpg" alt=""></div>
 			</a>
 			<div class="main-tile active">
-				<div class="main-wrap"><a href="prize-8" class="modal-btn"><img src="img/main/prize-8-min.jpg" alt=""></a></div>
+				<div class="main-wrap"><a href="prize-8" class="modal-btn"><img src="img/main/prize-8-min.png" alt=""></a></div>
 			</div>
 			<div class="main-tile active">
-				<div class="main-wrap"><a href="prize-9" class="modal-btn"><img src="img/main/prize-9-min.jpg" alt=""></a></div>
+				<div class="main-wrap"><a href="prize-9" class="modal-btn"><img src="img/main/prize-9-min.png" alt=""></a></div>
 			</div>
 			<a href="prize-1" class="main-tile modal-btn">
 				<div class="main-wrap"><img src="img/main/prize-1-min.jpg" alt=""></div>
@@ -97,9 +97,9 @@
 			<a href="prize-1" class="main-tile modal-btn">
 				<div class="main-wrap"><img src="img/main/prize-1-min.jpg" alt=""></div>
 			</a>
-			<a href="prize-1" class="main-tile active modal-btn">
-				<div class="main-wrap"><img src="img/main/prize-1-min.jpg" alt=""><div class="main-text">Это окошко открылВасилий У.</div></div>
-			</a>
+			<div class="main-tile main-open active">
+				<div class="main-wrap"><img src="img/main/prize-1-min.jpg" alt=""><div class="main-text">Это окошко открыл <br>Василий У. <i class="hb-ico close-ico"></i></div></div>
+			</div>
 			<a href="prize-1" class="main-tile modal-btn">
 				<div class="main-wrap"><img src="img/main/prize-1-min.jpg" alt=""></div>
 			</a>
@@ -365,6 +365,18 @@
         <div class="input-block">
           <input type="Text" name="email" placeholder="E-mail" required>
         </div>
+        <div class="input-block">
+        	<div class="input-wrap">
+          	<input type="Text" name="text" placeholder="Промо-код от друга" required>
+          	<div class="prompt">
+          		<div class="prompt-top"><i class="hb-ico prompt-ico prompt-ico-2"></i></div>
+          		<div class="prompt-wrap">
+          			<i class="hb-ico close-ico"></i>
+          			Если твой друг уже участвует в нашей акции и поделился с тобой промо-кодом , вводи его сюда. После того, как ты зарегистрируешь свой первый код с пачки, вы оба получите дополнительный шанс на открытие 1 ячейки шоколадной плитки.
+          		</div>
+          	</div>
+          </div>
+        </div>
         <div class="modal-checkbox">
           <div class="checkbox">
             <input type="checkbox" name="check-rules" required>
@@ -510,7 +522,10 @@
 				<div class="modal-code">
 					<div class="input-block">
 	          <input type="Text" name="email" placeholder="Код с упаковки" required>
-	          <a href="#" class="modal-link">Где найти код?</a>
+	          <div class="prompt prompt-text">
+	          	<div class="prompt-top"><span class="modal-link">Где найти код?</span></div>
+	          	<div class="prompt-wrap">Код располагается на внутренней стороне упаковки, и состоит из 9 символов (цифр и заглавных латинских букв). Обрати внимание, что коды присутствуют только на упаковках с коммуникацией об акции</div>
+	          </div>
 	        </div>
 				</div>
         <div class="modal-bottom">
@@ -541,7 +556,10 @@
 						<input type="Text" name="text">
 					</div>
 				</div>
-				<p class="modal-timer">Сделать звонок повторно через 56</p>
+				<!--<p class="modal-timer">Сделать звонок повторно через 56</p>-->
+				<div class="modal-center">
+					<a href="#" class="modal-link">Сделать звонок повторно</a>
+				</div>
         <div class="modal-bottom">
         	<button class="primary-btn primary-btn-big disabled">отправить</button>
         </div>
@@ -638,7 +656,10 @@
 					<div class="input-block">
 						<input type="text" name="text" placeholder="Код с упаковки">
 					</div>
-					<a href="#" class="prize-link">Где найти код?</a>
+					<div class="prompt prompt-text">
+          	<div class="prompt-top"><span class="modal-link">Где найти код?</span></div>
+          	<div class="prompt-wrap">Код располагается на внутренней стороне упаковки, и состоит из 9 символов (цифр и заглавных латинских букв). Обрати внимание, что коды присутствуют только на упаковках с коммуникацией об акции</div>
+          </div>
 					<button class="primary-btn primary-btn-big">отправить</button>
 				</form>
 			</div>
@@ -657,7 +678,10 @@
 					<div class="input-block">
 						<input type="text" name="text" placeholder="Код с упаковки">
 					</div>
-					<a href="#" class="prize-link">Где найти код?</a>
+					<div class="prompt prompt-text">
+          	<div class="prompt-top"><span class="modal-link">Где найти код?</span></div>
+          	<div class="prompt-wrap">Код располагается на внутренней стороне упаковки, и состоит из 9 символов (цифр и заглавных латинских букв). Обрати внимание, что коды присутствуют только на упаковках с коммуникацией об акции</div>
+          </div>
 					<button class="primary-btn primary-btn-big">отправить</button>
 				</form>
 			</div>
@@ -676,7 +700,10 @@
 					<div class="input-block">
 						<input type="text" name="text" placeholder="Код с упаковки">
 					</div>
-					<a href="#" class="prize-link">Где найти код?</a>
+					<div class="prompt prompt-text">
+          	<div class="prompt-top"><span class="modal-link">Где найти код?</span></div>
+          	<div class="prompt-wrap">Код располагается на внутренней стороне упаковки, и состоит из 9 символов (цифр и заглавных латинских букв). Обрати внимание, что коды присутствуют только на упаковках с коммуникацией об акции</div>
+          </div>
 					<button class="primary-btn primary-btn-big">отправить</button>
 				</form>
 			</div>

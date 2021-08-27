@@ -80,16 +80,36 @@
 	&-item
 		display: none
 		padding-bottom: 11px
-	.swiper-wrapper
+	&-row
 		display: flex
 		flex-flow: row wrap
+		justify-content: center
 		margin: 0
-		width: auto
-	&-slide
+		padding-top: 20px
+	&-col
 		width: 25%
-		padding: 0 31px 54px
+		padding: 0 21px 40px
 	&-wrap
+		height: 100%
 		text-align: center
+		padding-bottom: 18px
+		position: relative
+		&.product-new
+			.product
+				&-img
+					position: relative
+					&::after
+						content: ''
+						position: absolute
+						top: -20px
+						left: 48%
+						//transform: translate(-50%,0)
+						width: 61px
+						height: 32px
+						background-image: url(../img/product/new-min.png)
+						background-repeat: no-repeat
+						background-position: center
+						background-size: contain
 	&-img
 		padding-bottom: 16px
 		img,svg
@@ -104,15 +124,20 @@
 		a
 			color: #682700
 	&-name
-		min-height: 36px
+		min-height: 54px
 		font-family: $OfficinaSansMediumC
 		font-weight: 500
 	&-gram
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		text-align: center
 		font-style: italic
 
 @media only screen and (max-width : 890px)
 	.product
-		&-slide
+		&-col
 			width: 33.333%
 			padding: 0 15px 40px
 
@@ -157,19 +182,18 @@
 		&-ico
 			margin: 0
 			background-image: url("data:image/svg+xml,%3Csvg width='54' height='54' viewBox='0 0 54 54' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Ccircle cx='28' cy='26' r='25' fill='white'/%3E%3C/g%3E%3Cpath d='M41 28.3137C41 28.6187 40.9508 28.8148 40.8524 28.902C40.7539 28.9673 40.4751 29 40.0157 29H17.0335C16.5741 29 16.2789 28.9673 16.1476 28.902C16.0492 28.8148 16 28.6187 16 28.3137V24.6863C16 24.403 16.0492 24.2179 16.1476 24.1307C16.2789 24.0436 16.5741 24 17.0335 24H40.0157C40.4751 24 40.7539 24.0436 40.8524 24.1307C40.9508 24.2179 41 24.403 41 24.6863V28.3137Z' fill='%23531D0D'/%3E%3Cpath d='M26.6863 39C26.3813 39 26.1852 38.9508 26.098 38.8524C26.0327 38.7539 26 38.4751 26 38.0157L26 15.0335C26 14.5741 26.0327 14.2789 26.098 14.1476C26.1852 14.0492 26.3813 14 26.6863 14L30.3137 14C30.597 14 30.7821 14.0492 30.8693 14.1476C30.9564 14.2789 31 14.5741 31 15.0335L31 38.0157C31 38.4751 30.9564 38.7539 30.8693 38.8524C30.7821 38.9508 30.5969 39 30.3137 39L26.6863 39Z' fill='%23531D0D'/%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0' y='0' width='54' height='54' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='-1' dy='1'/%3E%3CfeGaussianBlur stdDeviation='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.407789 0 0 0 0 0.153002 0 0 0 0 0.000130266 0 0 0 0.75 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A")
-		&-slider
-			padding: 0 20px
-			.swiper-button-prev,.swiper-button-next
-				top: 107px
-				transform: none
-		.swiper-wrapper
-			flex-flow: row nowrap
-		&-slide
-			width: 100%
+		&-row
+			padding: 0 7px 20px
+		&-col
+			padding: 0 10px
+		&-wrap
+			padding-bottom: 24px
+		&-name,&-gram
+			display: none
 		&-img
-			padding-bottom: 25px
+			padding-bottom: 0
 			img,svg
-				max-height: 242px
+				max-height: 160px
 		&-name
 			min-height: auto
 			margin-bottom: 2px

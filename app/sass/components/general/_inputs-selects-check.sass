@@ -40,6 +40,22 @@ form
 			resize: none
 	&-wrap
 		position: relative
+		z-index: 50
+		.prompt
+			position: absolute
+			top: 50%
+			right: 20px
+			transform: translate(0,-50%)
+			min-width: 18px
+			width: 18px
+			height: 19px
+			&-wrap
+				width: 268px
+				top: 11px
+				left: auto
+				right: 0
+				transform: translate(16px,0)
+				text-align: center
 		input
 			padding-right: 130px
 	&-forgot
@@ -63,6 +79,13 @@ form
 		color: #F6473C
 		margin: 0 0 20px
 		text-align: center
+	&-symbols
+		display: block
+		text-align: center
+		font-size: 13px
+		line-height: 15px
+		color: rgba(#fff, 0.7)
+		padding-top: 8px
 
 .checkbox,.radio
 	display: block

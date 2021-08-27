@@ -1,117 +1,61 @@
-var swiper = new Swiper('.main-story__wrapper', {
-  slidesPerView: 8,
-  freeMode: true,
-  watchSlidesVisibility: true,
-  mousewheel: true,
-  watchOverflow: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-  	10: {
-      slidesPerView: 'auto',
+if($('.idea-slider').length){
+  var mySwiper = new Swiper('.idea-slider', {
+    slidesPerView: 3,
+    watchSlidesVisibility: true,
+    watchOverflow: true,
+    navigation: {
+      nextEl: '.idea-all .swiper-button-next',
+      prevEl: '.idea-all .swiper-button-prev',
     },
-  	600: {
-      slidesPerView: 5,
-    },
-    650: {
-      slidesPerView: 6,
-    },
-    769: {
-      slidesPerView: 5,
-    },
-    970: {
-      slidesPerView: 6,
-    },
-    1100: {
-      slidesPerView: 8,
+    breakpoints: {
+    	10: {
+        slidesPerView: 3,
+      },
+      769: {
+        slidesPerView: 1,
+      },
+      800: {
+        slidesPerView: 2,
+      },
+      1050: {
+        slidesPerView: 3,
+      }
     }
-  }
-});
-
-var swiper = new Swiper('.categories-wrapper', {
-	slidesPerView: 'auto',
-  freeMode: true,
-  mousewheel: true,
-  watchOverflow: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-
-var swiper = new Swiper('.news-slider', {
-  slidesPerView: 1,
-  watchOverflow: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
-
-var element = document.getElementById('product-slider');
-if(element){
-  /* Swiper
-  **************************************************************/
-  var swiper = Swiper;
-  var init = false;
-
-  /* Which media query
-  **************************************************************/
-  function swiperMode() {
-      var mobile = window.matchMedia('(min-width: 0px) and (max-width: 621px)');
-      var tablet = window.matchMedia('(min-width: 621px) and (max-width: 1024px)');
-      var desktop = window.matchMedia('(min-width: 1025px)');
-
-      // Enable (for mobile)
-      if(mobile.matches) {
-        swiper.destroy();
-        init = false;
-      }
-
-      // Disable (for tablet)
-      else if(tablet.matches) {
-        if (!init) {
-          swiper.destroy();
-        	init = false;
-        }
-      }
-
-      // Disable (for desktop)
-      else if(desktop.matches) {
-        if (!init) {
-            init = true;
-            swiper = new Swiper('.product-slider', {
-							loop: true,
-						  slidesPerView: 1,
-						  watchOverflow: true,
-						  navigation: {
-						    nextEl: '.swiper-button-next',
-						    prevEl: '.swiper-button-prev',
-						  },
-						});
-        }
-      }
-  }
-
-  /* On Load
-  **************************************************************/
-  window.addEventListener('load', function() {
-      swiperMode();
   });
 
-  /* On Resize
-  **************************************************************/
-  window.addEventListener('resize', function() {
-      swiperMode();
-  });
+  if($(window).outerWidth() < 750)
+    mySwiper.destroy();
 
+  $(window).on('scroll', function(){
+    if($(window).outerWidth() < 750)
+      mySwiper.destroy();
+  });
 }
 
 $(document).ready(function(){
 
-	$('.faq-block').mCustomScrollbar();
+  $('.myCodes').mCustomScrollbar();
+  $('.ideasForAStar-table').mCustomScrollbar();
+  $('.myPrizes-head').mCustomScrollbar();
+
+  //scrollbar
+  function scrollbar(){
+    $('.faq-block').mCustomScrollbar();
+  }
+
+  $(window).on('scroll', function(){
+    if($(window).outerWidth() > 890)
+      scrollbar();
+    else{
+      $('.faq-block').mCustomScrollbar('destroy');
+      $('.myCodes').mCustomScrollbar('destroy');
+      $('.ideasForAStar-table').mCustomScrollbar();
+      $('.myPrizes-head').mCustomScrollbar();
+    }
+  });
+
+  if($(window).outerWidth() > 890)
+    scrollbar();
 
 	//menu mob
 	$('.footer-toggle').on('click', function(){
@@ -128,6 +72,7 @@ $(document).ready(function(){
 
 	//menu mob
 	$('.header-bar').on('click', function(){
+    $('html,body').toggleClass('scroll-hidden');
 		$('.header').toggleClass('header-active');
 	});
 
@@ -138,13 +83,9 @@ $(document).ready(function(){
 		$(this).parents('.tab-list').find('a').removeClass('active');
 		$(this).parents('.allTabs').find('.tab').removeClass('tab-active');
 
-		var attr = $(e.target).attr('href');
+		var attr = $(this).attr('href');
 		$(attr).addClass('tab-active');
 		$(this).addClass('active');
-
-		//if($(window).width() < 840 && $(this).parents('.steps'))
-		//	$('html, body').animate({scrollTop : $('#steps').offset().top + ($('#steps').outerHeight() - $(window).height())},300);
-		//setTimeout(function(){ $('.portfolio-slider').slick('refresh'); }, 100);
 	});
 
 	//accordeons
@@ -170,6 +111,20 @@ $(document).ready(function(){
 		$('.intermediate').addClass('active');
 	});
 
+  $('.main-open').on('click', function (e) {
+    e.preventDefault();
+
+    if($(window).width() <= 768)
+      $(this).find('.main-wrap').toggleClass('active-text');
+  });
+
+  $('.prompt-top, .prompt .close-ico').on('click', function (e) {
+    e.preventDefault();
+
+    if($(window).width() <= 768)
+      $(this).parents('.prompt').toggleClass('active');
+  });
+
 	//product-mark
 	$('.product-mark').on('click', function(){
 		if($(this).parents('.product-block').hasClass('active')){
@@ -181,17 +136,6 @@ $(document).ready(function(){
 			$(this).parents('.product-block').addClass('active').find('.product-item').slideDown();
 			$(this).find('.product-text').text('Свернуть список');
 		}
-		setTimeout(function(){
-			swiper = new Swiper('.product-slider', {
-				loop: true,
-			  slidesPerView: 1,
-			  watchOverflow: true,
-			  navigation: {
-			    nextEl: '.swiper-button-next',
-			    prevEl: '.swiper-button-prev',
-			  },
-			});
-		}, 300);
 	});
 
 	//modal
@@ -216,7 +160,9 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.modal-close, .fancybox-close').on('click',function(){
+	$('.modal-close, .fancybox-close').on('click',function(e){
+    e.preventDefault();
+
 		$(modalCont).removeClass('open');
 		$('.modal-overlay').removeClass('open-overlay');
 		$('.intermediate').removeClass('intermediate');
