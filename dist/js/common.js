@@ -32,7 +32,23 @@ if($('.idea-slider').length){
   });
 }
 
+function myPrizes(){
+  var mySwiper = new Swiper('.myPrizes-slider', {
+    slidesPerView: 1,
+    watchOverflow: true,
+    navigation: {
+      nextEl: '.myPrizes-col .swiper-button-next',
+      prevEl: '.myPrizes-col .swiper-button-prev',
+    },
+  });
+}
+myPrizes();
+
 $(document).ready(function(){
+
+  //remove in back!!!
+  if($(window).outerWidth() > 768)
+    setTimeout(function(){ $('.modalMain').addClass('open'); $('.modal-overlay').addClass('open-overlay'); }, 3000);
 
   $('.myCodes').mCustomScrollbar();
   $('.ideasForAStar-table').mCustomScrollbar();
@@ -86,6 +102,8 @@ $(document).ready(function(){
 		var attr = $(this).attr('href');
 		$(attr).addClass('tab-active');
 		$(this).addClass('active');
+
+    setTimeout(function(){ myPrizes(); }, 500);
 	});
 
 	//accordeons
@@ -123,6 +141,12 @@ $(document).ready(function(){
 
     if($(window).width() <= 768)
       $(this).parents('.prompt').toggleClass('active');
+  });
+
+  $('.myPrizes-wrap .second-btn').on('click', function (e) {
+    e.preventDefault();
+    if($(window).width() <= 768)
+      $(this).parents('.myPrizes-wrap').find('.prompt').toggleClass('active');
   });
 
 	//product-mark
