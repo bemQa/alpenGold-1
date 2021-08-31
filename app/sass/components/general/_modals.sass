@@ -32,6 +32,7 @@
 	visibility: hidden
 	opacity: 0
 	overflow-y: auto
+	overflow-x: hidden
 	backface-visibility: hidden
 	&-attr
 		display: none
@@ -307,6 +308,9 @@
 	&#modal-code
 		.modal-bottom
 			max-width: 100%
+	&#modal-numberConfirmation
+		label.error,.input-text
+			display: none!important
 
 .prize
 	&-question
