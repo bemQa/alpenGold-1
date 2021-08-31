@@ -32,6 +32,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/mCustomScrollbar/jquery.mCustomScrollbar.min.js',
 		'app/libs/jquery.inputmask.min.js',
 		'app/libs/jquery.validate.min.js',
+		'app/libs/select2/select2.min.js',
 		])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Минимизировать весь js (на выбор)

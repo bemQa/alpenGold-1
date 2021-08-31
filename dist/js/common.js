@@ -49,6 +49,7 @@ $(document).ready(function(){
   $('.myCodes').mCustomScrollbar();
   $('.ideasForAStar-table').mCustomScrollbar();
   $('.myPrizes-head').mCustomScrollbar();
+  $('.winners-table').mCustomScrollbar();
 
   //scrollbar
   function scrollbar(){
@@ -63,6 +64,7 @@ $(document).ready(function(){
       $('.myCodes').mCustomScrollbar('destroy');
       $('.ideasForAStar-table').mCustomScrollbar();
       $('.myPrizes-head').mCustomScrollbar();
+      $('.winners-table').mCustomScrollbar();
     }
   });
 
@@ -295,5 +297,19 @@ $(document).ready(function(){
     });
 	}
 	checkValidate();
+
+  if ($('.select').length > 0) {
+    $('.select select').select2({
+      minimumResultsForSearch: Infinity,
+      dropdownParent: $('.select')
+    });
+    $('.select-search').each(function () {
+      var $this = $(this);
+      var parent = $(this).parents('.select');
+      $this.select2({
+        dropdownParent: parent
+      });
+    });
+  }
 
 });
