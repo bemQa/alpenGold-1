@@ -284,7 +284,7 @@
 		padding: 20px 10px 0
 	&-wrap
 		display: block
-		height: 416px
+		height: 399px
 		//padding-bottom: 130.81967213114754%
 		background: rgba(191, 87, 49, 0.3)
 		border: 1px solid #fff
@@ -319,8 +319,11 @@
 		&.myPrizes-3
 			.myPrizes
 				&-img
-					top: 72px
-					padding: 0 20px 0 0
+					top: 74px
+					padding: 0
+					img,svg
+						min-width: 104.51%
+						padding-right: 10px
 		&.myPrizes-4
 			background: linear-gradient(76.65deg, #FCE7A7 28.9%, #F6B748 58.74%, #F7B645 83.14%)
 			border: none
@@ -332,6 +335,7 @@
 				&-title
 					max-width: 300px
 					color: #531D0D
+					text-shadow: none
 				&-inf
 					color: #531D0D
 		&.myPrizes-5
@@ -702,12 +706,19 @@
 			&.myCodesPrompt
 				margin-top: 42px
 	.myPrizes
+		margin: 0 -16px
 		&-head
 			max-height: 1190px
 		&-col
 			width: 100%
-			max-width: 305px
+			max-width: 365px
 			margin: 0 auto
+			padding-left: 30px
+			padding-right: 30px
+		.mCSB_inside>.mCSB_container
+			margin: 0
+		.mCSB_scrollTools .mCSB_draggerContainer
+			left: -7px
 
 @media only screen and (max-width : 370px)
 	.personalArea

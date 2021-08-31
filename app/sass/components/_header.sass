@@ -53,11 +53,11 @@
 			img,svg
 				max-height: 210px
 		&-2
-			top: 0
-			left: 205px
+			bottom: 0
+			left: 198px
 			z-index: 10
 			img,svg
-				max-height: 210px
+				max-height: 194px
 				image-rendering: optimizequality
 				image-rendering: -webkit-optimize-contrast
 		&-3
@@ -220,7 +220,7 @@
 			z-index: 1200
 			opacity: 0
 			visibility: hidden
-			&::before,&::after
+			&::before
 				content: ''
 				position: absolute
 				left: 0
@@ -228,14 +228,9 @@
 				background-repeat: no-repeat
 				background-position: center
 				background-size: cover
-			&::before
 				top: 0
 				padding-bottom: 81.06666666666666%
 				background-image: url(../img/header/header-light-1-min.png)
-			&::after
-				bottom: 0
-				padding-top: 81.06666666666666%
-				background-image: url(../img/header/header-light-2-min.png)
 			.header-buttons
 				display: block
 				max-width: 250px
@@ -324,7 +319,7 @@
 				top: auto
 				bottom: 0
 				img,svg
-					max-width: 317px
+					max-width: 347px
 			&-3
 				left: -160px
 	
@@ -397,6 +392,17 @@
 		&-top
 			.wrapper
 				min-height: 425px
+		&-bg
+			&-2
+				width: 356px
+				display: none
+				top: auto
+				bottom: -52px
+				left: 50%
+				transform: translate(-50%,0)
+				img,svg
+					max-width: 356px
+					max-height: 100%
 		&-mob
 			&-1
 				display: none
@@ -407,6 +413,8 @@
 				width: 100%
 				padding-bottom: 125.92592592592594%
 				z-index: 10
+			&-3
+				display: block
 		&-logo
 			top: 27px
 			img,svg
@@ -456,14 +464,6 @@
 				right: 15px
 				width: 10px
 				height: 10px
-		&-bg
-			&-2
-				top: auto
-				bottom: -7px
-				left: 50%
-				transform: translate(-50%,0)
-				img,svg
-					max-width: 292px
 		&-bottom
 			padding: 0
 			.wrapper

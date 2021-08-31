@@ -76,10 +76,23 @@
 	&-block
 		padding-left: 58px
 		padding-top: 20px
-		p
+		p, ol, ul
 			font-size: 16px
 			line-height: 18px
 			color: #fff
+			a,span,b
+				font-family: $OfficinaSansBoldC
+				font-weight: bold
+				color: #fff
+			b
+				display: block
+		p, ul, ol
+			padding-bottom: 18px
+			&.text-small
+				padding-left: 18px
+		p
+			&:last-child
+				padding-bottom: 0
 	&.accordeon-active
 		.accordeon
 			&-top

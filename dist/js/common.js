@@ -46,10 +46,6 @@ myPrizes();
 
 $(document).ready(function(){
 
-  //remove in back!!!
-  if($(window).outerWidth() > 768)
-    setTimeout(function(){ $('.modalMain').addClass('open'); $('.modal-overlay').addClass('open-overlay'); }, 3000);
-
   $('.myCodes').mCustomScrollbar();
   $('.ideasForAStar-table').mCustomScrollbar();
   $('.myPrizes-head').mCustomScrollbar();
