@@ -161,6 +161,7 @@ $(document).ready(function(){
 	});
 
 	//modal
+  $('.modal-wrap').append("<div class='modal-close'></div>");
 	var modalCont = $('.modal');
 		
 	$('.modal-btn').on('click',function(e){
@@ -169,6 +170,8 @@ $(document).ready(function(){
 		$(modalCont).removeClass('open');
 
 		var id = '#' + $(this).attr('href');
+
+    $('html, body').addClass('scroll-hidden');
 
 		if($(this).hasClass('main-tile')){
 			$('#confirmation').addClass('open');
@@ -188,6 +191,7 @@ $(document).ready(function(){
 		$(modalCont).removeClass('open');
 		$('.modal-overlay').removeClass('open-overlay');
 		$('.intermediate').removeClass('intermediate');
+    $('html, body').removeClass('scroll-hidden');
 	});
 
 	//forms

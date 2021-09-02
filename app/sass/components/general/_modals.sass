@@ -17,16 +17,10 @@
 
 .modal
 	position: fixed
-	top: 50%
-	left: 50%
-	transform: translate(-50%,-50%) translateZ(0)
-	max-width: 640px
+	top: 0
+	left: 0
 	width: 100%
-	padding: 0
-	background-color: transparent
-	max-height: 100%
-	border-radius: 20px
-	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.7)
+	height: 100%
 	transition: $transition
 	z-index: 99999
 	visibility: hidden
@@ -34,6 +28,7 @@
 	overflow-y: auto
 	overflow-x: hidden
 	backface-visibility: hidden
+	padding: 20px 0
 	&-attr
 		display: none
 	&-close
@@ -48,6 +43,7 @@
 		background-position: center
 		background-size: 20px
 		z-index: 100
+		display: none
 	&.open
 		visibility: visible
 		opacity: 1
@@ -60,7 +56,16 @@
 		.modal-link
 			opacity: 0.7
 	&-wrap
+		width: 100%
+		margin: 0 auto
 		position: relative
+		border-radius: 20px
+		overflow: hidden
+		box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.7)
+		max-width: 640px
+		.modal
+			&-close
+				display: block
 		&::before,&::after
 			content: ''
 			position: absolute
@@ -152,23 +157,23 @@
 			line-height: 15px
 			opacity: 0.7
 	&.modal-form
-		max-width: 320px
 		width: 100%
 		.modal
 			&-wrap
+				max-width: 320px
 				padding: 64px 20px 30px
 	&.modal-prize
-		max-width: 320px
 		width: 100%
 		box-shadow: none
 		.modal
 			&-wrap
+				max-width: 320px
 				padding: 64px 20px 30px
 	&.modal-confirmation
-		max-width: 320px
 		width: 100%
 		.modal
 			&-wrap
+				max-width: 320px
 				padding: 64px 20px 30px
 	&.modal-prize-2
 		.prize
@@ -195,13 +200,22 @@
 				width: 321px
 				height: 319px
 				padding-left: 30px
+	&.modal-prize-6
+		.primary-btn
+			margin-bottom: 27px
+		.prompt-text.prompt
+			margin-bottom: 0
+		.prompt-wrap
+			top: auto
+			bottom: 0
 	&.modalMain
-		max-width: 800px
 		box-shadow: none
 		border-radius: 0
 		overflow-x: hidden
 		overflow-y: hidden
 		padding: 109px 0 50px
+		.modal-wrap
+			max-width: 800px
 		.modal-close
 			top: 132px
 		.primary-btn
@@ -313,6 +327,13 @@
 			display: none!important
 
 .prize
+	&-txt
+		display: block
+		font-size: 14px
+		line-height: 16px
+		color: #fff
+		padding-bottom: 27px
+		text-align: center
 	&-question
 		max-width: 200px
 		margin: 0 auto
