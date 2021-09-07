@@ -185,7 +185,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.modal-close, .fancybox-close').on('click',function(e){
+	$('.modal-close, .fancybox-close, .modal-cross').on('click',function(e){
     e.preventDefault();
 
 		$(modalCont).removeClass('open');
