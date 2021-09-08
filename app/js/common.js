@@ -314,6 +314,13 @@ $(document).ready(function(){
         dropdownParent: parent
       });
     });
+
+    $('.select-date .select-search').on('select2:select', function (e) {
+      var data = e.params.data.text;
+      $(this).parents('.prizes-block').find('.prizes-col').removeClass('active')
+      $(this).parents('.prizes-block').find("[data-date='" + data + "']").addClass('active');
+      //console.log(data);
+    });
   }
 
 });

@@ -247,6 +247,8 @@
 					color: #fff
 	&-date
 		display: none
+		position: relative
+		z-index: 50
 
 @media only screen and (max-width : 890px)
 	.winners
@@ -283,11 +285,6 @@
 		&-row,&-top
 			padding-left: 0
 			padding-right: 0
-		&-date
-			display: flex
-			align-items: center
-			justify-content: center
-			padding-bottom: 20px
 
 @media only screen and (max-width : 768px)
 	.winners
@@ -314,6 +311,16 @@
 			padding-bottom: 4px
 			&:last-child
 				padding: 6px 0 0
+		&-date
+			display: flex
+			align-items: center
+			justify-content: center
+			padding-bottom: 20px
+		.prizes
+			&-col
+				display: none
+				&.active
+					display: block
 
 @media only screen and (max-width : 370px)
 	.winners
