@@ -330,4 +330,8 @@ $(document).ready(function(){
     });
   }
 
+  $('.tooltip-close').click(function(e) {
+    e.preventDefault();
+    $(this).parent().fadeOut();
+  })
 });
