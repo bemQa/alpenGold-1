@@ -32,8 +32,49 @@
 	background-size: contain;
 }
 
+.tooltip-checkback {
+	position: fixed;
+	top: calc(30% + 220px);
+	right: 0;
+	width: 250px;
+	height: 191px;
+	background: url(../img/tooltip-checkback-bg.png) center no-repeat;
+	background-size: contain;
+	z-index: 1000;
+}
+
+.tooltip-checkback::before {
+	content: '';
+	position: absolute;
+	top: -28px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 95px;
+	height: 43px;
+	background: url(../img/checkback-text.svg) center no-repeat;
+	background-size: contain;
+	z-index: 1;
+}
+
+.tooltip-checkback-btn {
+	position: absolute;
+	top: 130px;
+	left: 0;
+	right: -115px;
+	margin: auto;
+	width: 107px;
+	height: 38px;
+	background: url(../img/tooltip-checkback-btn.png) center no-repeat;
+	background-size: contain;
+}
+
 @media(max-width: 750px) {
 	.tooltip {
-		top: 400px;
+		top: 230px;
+	}
+
+	.tooltip-checkback {
+		top: 450px;
 	}
 }
