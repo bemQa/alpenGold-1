@@ -772,6 +772,10 @@
 	.myCodes {
 		max-height: 768px;
 	}
+
+	.myPrizes-head {
+		max-height: 848px;
+	}
 }
 
 @media(max-width: 750px) {
