@@ -69,6 +69,711 @@
 	background-size: contain;
 }
 
+.ny .header-top {
+	background: radial-gradient(50.17% 63.64% at 49.83% 49.09%, #F70000 0%, #F79400 0.01%, #922901 65.63%, #79090F 72.4%, #431013 96.35%);
+}
+
+.ny .header-decor-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	background: url(../img/ny/header-decor-1-min.png) center 0 no-repeat;
+	background-size: 1424px;
+}
+
+.ny .header-garland-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 106px;
+	height: 32px;
+	background: url(../img/ny/header-garland-1-min.png) center no-repeat;
+	background-size: contain;
+}
+
+.ny .header-garland-2 {
+	position: absolute;
+	top: 0;
+	left: 480px;
+	width: 254px;
+	height: 37px;
+	background: url(../img/ny/header-garland-2-min.png) center no-repeat;
+	background-size: contain;
+}
+
+.ny .header-garland-3 {
+	position: absolute;
+	top: 0;
+	left: 125px;
+	width: 322px;
+	height: 63px;
+	background: url(../img/ny/header-garland-3-min.png) center no-repeat;
+	background-size: contain;
+}
+
+.ny .header-garland-3 .garland-light {
+	position: absolute;
+	width: 20px;
+	height: 27px;
+	background: url(../img/ny/garland-light.png) center no-repeat;
+	background-size: contain;
+	opacity: 0.4;
+}
+
+.header-garland-3 .garland-light-1 {
+	top: -10px;
+	left: 6px;
+	transform: rotate(27.22deg);
+	animation: garland-light 7s infinite linear;
+}
+
+.header-garland-3 .garland-light-2 {
+	top: 8px;
+	left: 25px;
+	transform: rotate(26.54deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: .5s;
+}
+
+.header-garland-3 .garland-light-3 {
+	top: 25px;
+	left: 54px;
+	transform: rotate(15.07deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 1s;
+}
+
+.header-garland-3 .garland-light-4 {
+	top: 37px;
+	left: 85px;
+	transform: rotate(10.72deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 2.5s;
+}
+
+.header-garland-3 .garland-light-5 {
+	top: 43px;
+	left: 120px;
+	transform: rotate(7.28deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 3s;
+}
+
+.header-garland-3 .garland-light-6 {
+	top: 43px;
+	left: 157px;
+	transform: rotate(-3.3deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 3.5s;
+}
+
+.header-garland-3 .garland-light-7 {
+	top: 40px;
+	left: 190px;
+	transform: rotate(-12.16deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 4s;
+}
+
+.header-garland-3 .garland-light-8 {
+	top: 32px;
+	left: 222px;
+	transform: rotate(-12.16deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 4.5s;
+}
+
+.header-garland-3 .garland-light-9 {
+	top: 20px;
+	left: 253px;
+	transform: rotate(-21.56deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 5s;
+}
+
+.header-garland-3 .garland-light-10 {
+	top: 4px;
+	left: 279px;
+	transform: rotate(-35.74deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 5.5s;
+}
+
+.ny .header-garland-4 {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	width: 308px;
+	height: 27px;
+	background: url(../img/ny/header-garland-4-min.png) center no-repeat;
+	background-size: contain;
+}
+
+.ny .header-garland-4 .garland-light {
+	position: absolute;
+	width: 20px;
+	height: 27px;
+	background: url(../img/ny/garland-light.png) center no-repeat;
+	background-size: contain;
+	opacity: 0.4;
+}
+
+.header-garland-4 .garland-light-1 {
+	top: -10px;
+	left: 101px;
+	transform: rotate(24.06deg);
+	animation: garland-light 7s infinite linear;
+}
+
+.header-garland-4 .garland-light-2 {
+	top: 0;
+	left: 134px;
+	transform: rotate(13.49deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: .5s;
+}
+
+.header-garland-4 .garland-light-3 {
+	top: 7px;
+	left: 172px;
+	transform: rotate(4.62deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 1s;
+}
+
+.header-garland-4 .garland-light-4 {
+	top: 7px;
+	left: 207px;
+	transform: rotate(4.62deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 2.5s;
+}
+
+.header-garland-4 .garland-light-5 {
+	top: 3px;
+	left: 242px;
+	transform: rotate(-4.77deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 3s;
+}
+
+.header-garland-4 .garland-light-6 {
+	top: -7px;
+	left: 271px;
+	transform: rotate(-18.96deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 3.5s;
+}
+
+.header-garland-4 .garland-light-7 {
+	display: none;
+}
+
+@keyframes garland-light {
+	0%, 100% {
+		opacity: 0.4;
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
+
+.header-snowflakes {
+	position: absolute;
+	top: 0;
+	left: -1000px;
+	right: -1000px;
+	margin: auto;
+	width: 1408px;
+	height: 100%;
+}
+
+.header-snowflake {
+	position: absolute;
+}
+
+.header-snowflake-1 {
+	top: -100px;
+	left: 0;
+	width: 15px;
+	height: 13px;
+	background: url(../img/ny/header-snow1.svg) center no-repeat;
+	background-size: contain;
+	animation: header-snowflake 10s infinite linear;
+}
+
+.header-snowflake-2 {
+	top: -100px;
+	left: 174px;
+	width: 26px;
+	height: 25px;
+	background: url(../img/ny/header-snow2.svg) center no-repeat;
+	background-size: contain;
+	animation: header-snowflake 9s infinite linear;
+	animation-delay: 1s;
+}
+
+.header-snowflake-3 {
+	top: -100px;
+	left: 459px;
+	width: 18px;
+	height: 20px;
+	background: url(../img/ny/header-snow3.svg) center no-repeat;
+	background-size: contain;
+	animation: header-snowflake 9.5s infinite linear;
+	animation-delay: .5s;
+}
+
+.header-snowflake-4 {
+	top: -100px;
+	left: 738px;
+	width: 32px;
+	height: 34px;
+	background: url(../img/ny/header-snow4.svg) center no-repeat;
+	background-size: contain;
+	animation: header-snowflake 8.5s infinite linear;
+	animation-delay: 1.5s;
+}
+
+.header-snowflake-5 {
+	top: -100px;
+	left: 815px;
+	width: 16px;
+	height: 14px;
+	background: url(../img/ny/header-snow5.svg) center no-repeat;
+	background-size: contain;
+	animation: header-snowflake 9s infinite linear;
+	animation-delay: 1s;
+}
+
+.header-snowflake-6 {
+	top: -100px;
+	left: 862px;
+	width: 13px;
+	height: 14px;
+	background: url(../img/ny/header-snow6.svg) center no-repeat;
+	background-size: contain;
+	animation: header-snowflake 10s infinite linear;
+	animation-delay: 1.5s;
+}
+
+.header-snowflake-7 {
+	top: -100px;
+	left: 898px;
+	width: 30px;
+	height: 31px;
+	background: url(../img/ny/header-snow7.svg) center no-repeat;
+	background-size: contain;
+	animation: header-snowflake 9s infinite linear;
+	animation-delay: 2.5s;
+}
+
+.header-snowflake-8 {
+	top: -100px;
+	left: 948px;
+	width: 17px;
+	height: 15px;
+	background: url(../img/ny/header-snow8.svg) center no-repeat;
+	background-size: contain;
+	animation: header-snowflake 10s infinite linear;
+}
+
+.header-snowflake-9 {
+	top: -100px;
+	left: 1051px;
+	width: 18px;
+	height: 20px;
+	background: url(../img/ny/header-snow9.svg) center no-repeat;
+	background-size: contain;
+	animation: header-snowflake 9.5s infinite linear;
+	animation-delay: .5s;
+}
+
+.header-snowflake-10 {
+	top: -100px;
+	left: 1388px;
+	width: 18px;
+	height: 20px;
+	background: url(../img/ny/header-snow10.svg) center no-repeat;
+	background-size: contain;
+	animation: header-snowflake 9s infinite linear;
+}
+
+@keyframes header-snowflake {
+	0% {
+		top: -100px;
+	}
+
+	100% {
+		top: 250px;
+	}
+}
+
+.header-logo {
+	display: block;
+	left: -17px;
+	max-width: 147px;
+	width: 100%;
+}
+
+.ny .header-bg-1 {
+	display: none;
+}
+
+.ny .header-bg-2 {
+	left: 0;
+}
+
+.ny .header-text {
+	right: 0;
+}
+
+.ny .header-list li::after {
+	top: -2px;
+    right: -7px;
+    bottom: 0;
+    margin: auto;
+    width: 14px;
+    height: 14px;
+    background: url(../img/ny/snowflake.png) center no-repeat;
+    background-size: contain;
+    transform: none;
+}
+
+.ny.personalArea .page-top {
+	position: relative;
+	z-index: 502;
+}
+
+.ny .lk-decor {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 142px;
+	height: 63px;
+	background: url(../img/ny/lk-decor.svg) center no-repeat;
+	background-size: contain;
+}
+
+.ny .lk-snowflakes-1 {
+	position: absolute;
+	top: 0;
+	left: 26px;
+	width: 289px;
+	height: 150px;
+	background: url(../img/ny/lk-snowflakes-1-min.png) center no-repeat;
+	background-size: contain;
+}
+
+.ny .lk-snowflakes-2 {
+	position: absolute;
+	top: 0;
+	right: 30px;
+	width: 289px;
+	height: 150px;
+	background: url(../img/ny/lk-snowflakes-2-min.png) center no-repeat;
+	background-size: contain;
+}
+
+.ny .lk-snowflakes {
+	position: absolute;
+	top: 0;
+	left: -1200px;
+	right: -1000px;
+	bottom: 0;
+	margin: auto;
+	width: 1200px;
+	height: 100%;
+}
+
+.ny .lk-snowflake {
+	position: absolute;
+}
+
+.ny .lk-snowflake-1 {
+	top: -90px;
+	left: 0;
+	width: 62px;
+	height: 66px;
+	background: url(../img/ny/lk-snow-1.svg) center no-repeat;
+	background-size: contain;
+	animation: lk-snowflake 18s infinite linear;
+}
+
+.ny .lk-snowflake-2 {
+	top: -90px;
+	left: 154px;
+	width: 62px;
+	height: 66px;
+	background: url(../img/ny/lk-snow-2.svg) center no-repeat;
+	background-size: contain;
+	animation: lk-snowflake 20s infinite linear;
+	animation-delay: 1s;
+}
+
+.ny .lk-snowflake-3 {
+	top: -90px;
+	left: 361px;
+	width: 62px;
+	height: 66px;
+	background: url(../img/ny/lk-snow-3.svg) center no-repeat;
+	background-size: contain;
+	animation: lk-snowflake 16s infinite linear;
+	animation-delay: 2s;
+}
+
+.ny .lk-snowflake-4 {
+	top: -90px;
+	left: 580px;
+	width: 26px;
+	height: 28px;
+	background: url(../img/ny/lk-snow-4.svg) center no-repeat;
+	background-size: contain;
+	animation: lk-snowflake 21s infinite linear;
+	animation-delay: 2.5s;
+}
+
+.ny .lk-snowflake-5 {
+	top: -90px;
+	left: 740px;
+	width: 26px;
+	height: 29px;
+	background: url(../img/ny/lk-snow-5.svg) center no-repeat;
+	background-size: contain;
+	animation: lk-snowflake 19s infinite linear;
+	animation-delay: 1.5s;
+}
+
+.ny .lk-snowflake-6 {
+	top: -90px;
+	left: 855px;
+	width: 26px;
+	height: 29px;
+	background: url(../img/ny/lk-snow-6.svg) center no-repeat;
+	background-size: contain;
+	animation: lk-snowflake 20s infinite linear;
+	animation-delay: 2s;
+}
+
+.ny .lk-snowflake-7 {
+	top: -90px;
+	left: 1040px;
+	width: 38px;
+	height: 41px;
+	background: url(../img/ny/lk-snow-7.svg) center no-repeat;
+	background-size: contain;
+	animation: lk-snowflake 18.5s infinite linear;
+}
+
+.ny .lk-snowflake-8 {
+	top: -90px;
+	left: 1140px;
+	width: 38px;
+	height: 41px;
+	background: url(../img/ny/lk-snow-8.svg) center no-repeat;
+	background-size: contain;
+	animation: lk-snowflake 14.5s infinite linear;
+	animation-delay: .5s;
+}
+
+@keyframes lk-snowflake {
+	0% {
+		top: -90px;
+	}
+
+	100% {
+		top: 850px;
+	}
+}
+
+.ny .lk-garland-1 {
+	position: absolute;
+    top: -45px;
+    left: -1000px;
+    right: 0;
+    margin: auto;
+	width: 320px;
+	height: 89px;
+	background: url(../img/ny/lk-garland-1-min.png) center no-repeat;
+	background-size: contain;
+}
+
+.ny .lk-garland-2 {
+	position: absolute;
+	top: -45px;
+	left: 0;
+	right: -1000px;
+	margin: auto;
+	width: 319px;
+	height: 89px;
+	background: url(../img/ny/lk-garland-2-min.png) center no-repeat;
+	background-size: contain;
+}
+
+.ny .lk-garland-1 .garland-light,
+.ny .lk-garland-2 .garland-light {
+	position: absolute;
+	width: 20px;
+	height: 27px;
+	background: url(../img/ny/garland-light.png) center no-repeat;
+	background-size: contain;
+	opacity: 0.4;
+}
+
+.lk-garland-1 .garland-light-1 {
+	top: 24px;
+	left: 30px;
+	transform: rotate(33.3deg);
+	animation: garland-light 7s infinite linear;
+}
+
+.lk-garland-1 .garland-light-2 {
+	top: 43px;
+	left: 57px;
+	transform: rotate(21.83deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: .5s;
+}
+
+.lk-garland-1 .garland-light-3 {
+	top: 57px;
+	left: 89px;
+	transform: rotate(17.48deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 1s;
+}
+
+.lk-garland-1 .garland-light-4 {
+	top: 66px;
+	left: 125px;
+	transform: rotate(14.04deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 1.5s;
+}
+
+.lk-garland-1 .garland-light-5 {
+	top: 70px;
+	left: 165px;
+	transform: rotate(3.46deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 2s;
+}
+
+.lk-garland-1 .garland-light-6 {
+	top: 67px;
+	left: 204px;
+	transform: rotate(-5.4deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 2.5s;
+}
+
+.lk-garland-1 .garland-light-7 {
+	top: 60px;
+	left: 238px;
+	transform: rotate(-5.4deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 3s;
+}
+
+.lk-garland-1 .garland-light-8 {
+	top: 48px;
+	left: 267px;
+	transform: rotate(-14.8deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 3.5s;
+}
+
+.lk-garland-1 .garland-light-9 {
+	top: 32px;
+	left: 292px;
+	transform: rotate(-28.98deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 4s;
+}
+
+.lk-garland-2 .garland-light-1 {
+	top: 33px;
+	left: 9px;
+	transform: rotate(28.98deg);
+	animation: garland-light 7s infinite linear;
+}
+
+.lk-garland-2 .garland-light-2 {
+	top: 53px;
+	left: 44px;
+	transform: rotate(14.8deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: .5s;
+}
+
+.lk-garland-2 .garland-light-3 {
+	top: 65px;
+	left: 84px;
+	transform: rotate(5.4deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 1s;
+}
+
+.lk-garland-2 .garland-light-4 {
+	top: 69px;
+	left: 125px;
+	transform: rotate(5.4deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 1.5s;
+}
+
+.lk-garland-2 .garland-light-5 {
+	top: 68px;
+	left: 165px;
+	transform: rotate(-3.46deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 2s;
+}
+
+.lk-garland-2 .garland-light-6 {
+	top: 61px;
+	left: 204px;
+	transform: rotate(-14.04deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 2.5s;
+}
+
+.lk-garland-2 .garland-light-7 {
+	top: 47px;
+	left: 236px;
+	transform: rotate(-17.48deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 3s;
+}
+
+.lk-garland-2 .garland-light-8 {
+	top: 27px;
+	left: 267px;
+	transform: rotate(-21.83deg);
+	animation: garland-light 7s infinite linear;
+	animation-delay: 3.5s;
+}
+
+@media(max-width: 1366px) {
+	.header-logo {
+		left: 5px;
+	}
+}
+
+@media(max-width: 890px) {
+	.myCodes {
+		max-height: 768px;
+	}
+}
+
 @media(max-width: 750px) {
 	.tooltip {
 		top: 230px;
@@ -76,5 +781,247 @@
 
 	.tooltip-checkback {
 		top: 450px;
+	}
+
+	.ny .header-top {
+		min-height: 420px;
+	}
+
+	.ny.header.header-second .header-top {
+		min-height: 140px;
+		background: radial-gradient(53.64% 81.95% at 49.83% 49.09%, #F70000 0%, #F79400 0.01%, #922901 65.62%, #431013 96.35%);
+	}
+
+	.ny .header-decor-1 {
+		top: 65px;
+		height: 277px;
+		background: url(../img/ny/header-decor-1-mob-min.png) center 0 no-repeat;
+    	background-size: 335px;
+	}
+
+	.ny .header-garland-1 {
+		top: 283px;
+		left: auto;
+		right: 0;
+		width: 112px;
+		height: 44px;
+	    background: url(../img/ny/header-garland-1-mob-min.png) center no-repeat;
+    	background-size: contain;
+    	z-index: 10;
+	}
+
+	.ny .header-garland-2 {
+		display: none;
+	}
+
+	.ny .header-garland-3 {
+		left: 0;
+		width: 137px;
+		height: 82px;
+	    background: url(../img/ny/header-garland-3-mob-min.png) center no-repeat;
+    	background-size: contain;
+	}
+
+	.ny .header-garland-4 {
+		right: 0;
+		width: 127px;
+		height: 82px;
+	    background: url(../img/ny/header-garland-4-mob-min.png) center no-repeat;
+    	background-size: contain;
+	}
+
+	.ny .header-garland-3 .garland-light,
+	.ny .header-garland-4 .garland-light {
+		width: 13px;
+		height: 18px
+	}
+
+	.header-garland-3 .garland-light-1 {
+		top: 69px;
+		left: 7px;
+		transform: rotate(-7.43deg);
+	}
+
+	.header-garland-3 .garland-light-2 {
+		top: 66px;
+		left: 28px;
+		transform: rotate(-10.88deg);
+	}
+
+	.header-garland-3 .garland-light-3 {
+		top: 59px;
+		left: 49px;
+		transform: rotate(-21.45deg);
+	}
+
+	.header-garland-3 .garland-light-4 {
+		top: 50px;
+		left: 67px;
+		transform: rotate(-30.32deg);
+	}
+
+	.header-garland-3 .garland-light-5 {
+		top: 39px;
+		left: 85px;
+		transform: rotate(-30.32deg);
+	}
+
+	.header-garland-3 .garland-light-6 {
+		top: 25px;
+		left: 102px;
+		transform: rotate(-39.71deg);
+	}
+
+	.header-garland-3 .garland-light-7 {
+		display: block;
+		top: 8px;
+		left: 116px;
+		transform: rotate(-53.9deg);
+	}
+
+	.header-garland-3 .garland-light-8,
+	.header-garland-3 .garland-light-9,
+	.header-garland-3 .garland-light-10 {
+		display: none;
+	}
+
+	.header-garland-4 .garland-light-1 {
+		top: 5px;
+		left: 7px;
+		transform: rotate(53.9deg);
+	}
+
+	.header-garland-4 .garland-light-2 {
+		top: 22px;
+		left: 19px;
+		transform: rotate(39.71deg);
+	}
+
+	.header-garland-4 .garland-light-3 {
+		top: 38px;
+		left: 37px;
+		transform: rotate(30.32deg);
+	}
+
+	.header-garland-4 .garland-light-4 {
+		top: 52px;
+		left: 59px;
+		transform: rotate(30.32deg);
+	}
+
+	.header-garland-4 .garland-light-5 {
+		top: 61px;
+		left: 82px;
+		transform: rotate(21.45deg);
+	}
+
+	.header-garland-4 .garland-light-6 {
+		top: 66px;
+		left: 105px;
+		transform: rotate(10.88deg);
+	}
+
+	.header-garland-4 .garland-light-7 {
+		top: 67px;
+		left: 121px;
+		transform: rotate(7.43deg);
+	}
+
+	.header-snowflakes {
+		left: -1300px;
+	}
+
+	@keyframes header-snowflake {
+		0% {
+			top: -100px;
+		}
+
+		100% {
+			top: 450px;
+		}
+	}
+
+	.header-logo {
+		top: 20px;
+		left: 50%;
+		max-width: 107px;
+	}
+
+	.ny .header-mob-3 {
+		left: 50%;
+		bottom: -40px;
+	}
+
+	.ny .header-text {
+		top: 119px;
+	}
+
+	.ny .header-btn {
+		top: 189px;
+	}
+
+	.ny .header-list li::after {
+	    top: auto;
+	    bottom: 0;
+	    left: 50%;
+	    right: auto;
+	    -webkit-transform: translate(-50%,0);
+	    -ms-transform: translate(-50%,0);
+	    transform: translate(-50%,0);
+	    word-wrap: 24px;
+	    width: 24px;
+	    height: 2px;
+	    background: -webkit-gradient(linear,left top,left bottom,color-stop(2.6%,#c9613b),to(#230f0d));
+	    background: -webkit-linear-gradient(top,#c9613b 2.6%,#230f0d 100%);
+	    background: -o-linear-gradient(top,#c9613b 2.6%,#230f0d 100%);
+	    background: linear-gradient(180deg,#c9613b 2.6%,#230f0d 100%);
+	}
+
+	.ny.header.header-second .header-mob-2 {
+		display: none;
+	}
+
+	.ny .lk-snowflakes-1,
+	.ny .lk-snowflakes-2,
+	.ny .lk-garland-1,
+	.ny .lk-garland-2 {
+		display: none;
+	}
+
+	.ny .lk-decor {
+		top: 75px;
+		bottom: auto;
+		width: 100%;
+		height: 159px;
+		background: url(../img/ny/lk-snowflakes-mob-min.png) center no-repeat;
+    	background-size: 375px;
+	}
+
+	.ny .lk-snowflake-3 {
+		left: 525px;
+	}
+
+	.ny .lk-snowflake-7 {
+		left: 800px;
+	}
+
+	.ny .lk-snowflake-8 {
+		left: 900px;
+	}
+
+	@keyframes lk-snowflake {
+		0% {
+			top: -90px;
+		}
+
+		100% {
+			top: 1000px;
+		}
+	}
+}
+
+@media (max-width: 620px) {
+	.myCodes-col {
+		max-width: 305px;
 	}
 }

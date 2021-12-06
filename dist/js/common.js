@@ -61,7 +61,7 @@ $(document).ready(function(){
       scrollbar();
     else{
       $('.faq-block').mCustomScrollbar('destroy');
-      $('.myCodes').mCustomScrollbar('destroy');
+      $('.myCodes').mCustomScrollbar();
       $('.ideasForAStar-table').mCustomScrollbar();
       $('.myPrizes-head').mCustomScrollbar();
       $('.winners-table').mCustomScrollbar();
