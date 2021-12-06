@@ -446,6 +446,10 @@
     transform: none;
 }
 
+.ny.main-tile-4 {
+	background-image: url(../img/ny/tile-4-min.jpg);
+}
+
 .ny.personalArea .page-top {
 	position: relative;
 	z-index: 502;
