@@ -305,7 +305,7 @@
 	height: 13px;
 	background: url(../img/ny/header-snow1.svg) center no-repeat;
 	background-size: contain;
-	animation: header-snowflake 10s infinite linear;
+	animation: header-snowflake 12s infinite linear;
 }
 
 .header-snowflake-2 {
@@ -315,8 +315,8 @@
 	height: 25px;
 	background: url(../img/ny/header-snow2.svg) center no-repeat;
 	background-size: contain;
-	animation: header-snowflake 9s infinite linear;
-	animation-delay: 1s;
+	animation: header-snowflake 8s infinite linear;
+	animation-delay: 2s;
 }
 
 .header-snowflake-3 {
@@ -326,7 +326,7 @@
 	height: 20px;
 	background: url(../img/ny/header-snow3.svg) center no-repeat;
 	background-size: contain;
-	animation: header-snowflake 9.5s infinite linear;
+	animation: header-snowflake 9s infinite linear;
 	animation-delay: .5s;
 }
 
@@ -337,7 +337,7 @@
 	height: 34px;
 	background: url(../img/ny/header-snow4.svg) center no-repeat;
 	background-size: contain;
-	animation: header-snowflake 8.5s infinite linear;
+	animation: header-snowflake 7.5s infinite linear;
 	animation-delay: 1.5s;
 }
 
@@ -348,8 +348,8 @@
 	height: 14px;
 	background: url(../img/ny/header-snow5.svg) center no-repeat;
 	background-size: contain;
-	animation: header-snowflake 9s infinite linear;
-	animation-delay: 1s;
+	animation: header-snowflake 9.5s infinite linear;
+	animation-delay: 5s;
 }
 
 .header-snowflake-6 {
@@ -359,8 +359,8 @@
 	height: 14px;
 	background: url(../img/ny/header-snow6.svg) center no-repeat;
 	background-size: contain;
-	animation: header-snowflake 10s infinite linear;
-	animation-delay: 1.5s;
+	animation: header-snowflake 12s infinite linear;
+	animation-delay: 3.5s;
 }
 
 .header-snowflake-7 {
@@ -371,7 +371,7 @@
 	background: url(../img/ny/header-snow7.svg) center no-repeat;
 	background-size: contain;
 	animation: header-snowflake 9s infinite linear;
-	animation-delay: 2.5s;
+	animation-delay: 2s;
 }
 
 .header-snowflake-8 {
@@ -381,7 +381,7 @@
 	height: 15px;
 	background: url(../img/ny/header-snow8.svg) center no-repeat;
 	background-size: contain;
-	animation: header-snowflake 10s infinite linear;
+	animation: header-snowflake 11s infinite linear;
 }
 
 .header-snowflake-9 {
@@ -392,7 +392,7 @@
 	background: url(../img/ny/header-snow9.svg) center no-repeat;
 	background-size: contain;
 	animation: header-snowflake 9.5s infinite linear;
-	animation-delay: .5s;
+	animation-delay: 3.5s;
 }
 
 .header-snowflake-10 {
@@ -402,7 +402,7 @@
 	height: 20px;
 	background: url(../img/ny/header-snow10.svg) center no-repeat;
 	background-size: contain;
-	animation: header-snowflake 9s infinite linear;
+	animation: header-snowflake 7.5s infinite linear;
 }
 
 @keyframes header-snowflake {
@@ -519,8 +519,8 @@
 	height: 66px;
 	background: url(../img/ny/lk-snow-2.svg) center no-repeat;
 	background-size: contain;
-	animation: lk-snowflake 20s infinite linear;
-	animation-delay: 1s;
+	animation: lk-snowflake 22s infinite linear;
+	animation-delay: 6s;
 }
 
 .ny .lk-snowflake-3 {
@@ -531,7 +531,7 @@
 	background: url(../img/ny/lk-snow-3.svg) center no-repeat;
 	background-size: contain;
 	animation: lk-snowflake 16s infinite linear;
-	animation-delay: 2s;
+	animation-delay: 10s;
 }
 
 .ny .lk-snowflake-4 {
@@ -542,7 +542,7 @@
 	background: url(../img/ny/lk-snow-4.svg) center no-repeat;
 	background-size: contain;
 	animation: lk-snowflake 21s infinite linear;
-	animation-delay: 2.5s;
+	animation-delay: 14s;
 }
 
 .ny .lk-snowflake-5 {
@@ -552,8 +552,8 @@
 	height: 29px;
 	background: url(../img/ny/lk-snow-5.svg) center no-repeat;
 	background-size: contain;
-	animation: lk-snowflake 19s infinite linear;
-	animation-delay: 1.5s;
+	animation: lk-snowflake 18s infinite linear;
+	animation-delay: 4s;
 }
 
 .ny .lk-snowflake-6 {
@@ -563,8 +563,8 @@
 	height: 29px;
 	background: url(../img/ny/lk-snow-6.svg) center no-repeat;
 	background-size: contain;
-	animation: lk-snowflake 20s infinite linear;
-	animation-delay: 2s;
+	animation: lk-snowflake 22s infinite linear;
+	animation-delay: 3s;
 }
 
 .ny .lk-snowflake-7 {
@@ -575,6 +575,7 @@
 	background: url(../img/ny/lk-snow-7.svg) center no-repeat;
 	background-size: contain;
 	animation: lk-snowflake 18.5s infinite linear;
+	animation-delay: 8s;
 }
 
 .ny .lk-snowflake-8 {
