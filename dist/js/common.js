@@ -190,16 +190,21 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.modal-close, .fancybox-close, .modal-cross').on('click',function(e){
-    e.preventDefault();
+	$('.modal-close, .fancybox-close, .modal-cross').on('click', function(e) {
+        e.preventDefault();
 
-    if(!$('.header').hasClass('header-active'))
-      $('html,body').removeClass('scroll-hidden');
+        if (!$('.header').hasClass('header-active'))
+            $('html,body').removeClass('scroll-hidden');
 
-		$(modalCont).removeClass('open');
-		$('.modal-overlay').removeClass('open-overlay');
-		$('.intermediate').removeClass('intermediate');
-	});
+        $(modalCont).removeClass('open');
+        $('.modal-overlay').removeClass('open-overlay');
+        $('.intermediate').removeClass('intermediate');
+
+        if ($(this).next('video').length) {
+            let video = $(this).next('video').get(0);
+            video.pause();
+        }
+    });
 
 	//forms
 	function maskInit() {
