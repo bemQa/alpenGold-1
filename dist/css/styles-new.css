@@ -767,6 +767,11 @@
 	animation-delay: 3.5s;
 }
 
+.winners .prizes-block-last .prizes-img {
+	top: -18px;
+	width: 275px;
+}
+
 @media(max-width: 1366px) {
 	.header-logo {
 		left: 5px;
