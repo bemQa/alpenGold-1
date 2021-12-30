@@ -772,6 +772,19 @@
 	width: 275px;
 }
 
+.myPrizes-wrap.myPrizes-3 .myPrizes-img {
+	padding: 0 22px;
+}
+
+.myPrizes-wrap.myPrizes-3 .myPrizes-img img {
+	min-width: none;
+	padding-left: 0;
+}
+
+.modal.modal-prize-3 .prize-img img {
+	max-height: 108px;
+}
+
 @media(max-width: 1366px) {
 	.header-logo {
 		left: 5px;
